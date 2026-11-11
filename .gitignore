@@ -1,0 +1,4 @@
+math-sdk/
+__pycache__/
+*.pyc
+math/*/library/
