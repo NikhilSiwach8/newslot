@@ -15,3 +15,6 @@ web-sdk/apps/stormglass_keep/static/assets/*
 node_modules/
 .svelte-kit/
 storybook-static/
+
+# Upstream reference clones fetched by skills
+.upstream/
