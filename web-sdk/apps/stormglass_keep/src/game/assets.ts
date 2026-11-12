@@ -260,6 +260,30 @@ export default {
 			scale: 2,
 		},
 	},
+	// Stormglass Keep original art (built by art/build_game_assets.py)
+	stormSymbols: {
+		type: 'sprites',
+		src: new URL('../../assets/stormglass/symbols.json', import.meta.url).href,
+		preload: true,
+	},
+	bgBaseLandscape: {
+		type: 'sprite',
+		src: new URL('../../assets/stormglass/bg_base_landscape.webp', import.meta.url).href,
+		preload: true,
+	},
+	bgBasePortrait: {
+		type: 'sprite',
+		src: new URL('../../assets/stormglass/bg_base_portrait.webp', import.meta.url).href,
+		preload: true,
+	},
+	bgBonus: {
+		type: 'sprite',
+		src: new URL('../../assets/stormglass/bg_bonus.webp', import.meta.url).href,
+	},
+	bgDrowned: {
+		type: 'sprite',
+		src: new URL('../../assets/stormglass/bg_drowned.webp', import.meta.url).href,
+	},
 	symbolsStatic: {
 		type: 'sprites',
 		src: new URL('../../assets/sprites/symbolsStatic/symbolsStatic.json', import.meta.url).href,

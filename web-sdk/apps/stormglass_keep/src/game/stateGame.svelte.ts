@@ -82,6 +82,7 @@ export type MultiplierSymbol = {
 export const stateGame = $state({
 	board,
 	gameType: 'basegame' as GameType,
+	bonusTier: undefined as 'watch' | 'eye' | 'drowned' | undefined,
 	tumbleBoardAdding: [] as TumbleSymbol[][],
 	tumbleBoardBase: [] as TumbleSymbol[][],
 	multiplierBoard: [] as (MultiplierSymbol | undefined)[][],

@@ -130,6 +130,7 @@ export const bookEventHandlerMap: BookEventHandlerMap<BookEvent, BookEventContex
 		{ bookEvents }: BookEventContext,
 	) => {
 		const tier = findBonusTier(bookEvents, bookEvent.index);
+		stateGame.bonusTier = tier;
 		if (tier) eventEmitter.broadcast({ type: 'bonusTierShow', tier });
 		// animate scatters
 		eventEmitter.broadcast({ type: 'soundOnce', name: 'sfx_scatter_win_v2' });
@@ -207,6 +208,7 @@ export const bookEventHandlerMap: BookEventHandlerMap<BookEvent, BookEventContex
 
 		await eventEmitter.broadcastAsync({ type: 'uiHide' });
 		stateGame.gameType = 'basegame';
+		stateGame.bonusTier = undefined;
 		eventEmitter.broadcast({ type: 'boardFrameGlowHide' });
 		eventEmitter.broadcast({ type: 'globalMultiplierHide' });
 		eventEmitter.broadcast({ type: 'freeSpinOutroShow' });
@@ -264,6 +266,7 @@ export const bookEventHandlerMap: BookEventHandlerMap<BookEvent, BookEventContex
 	},
 	// The tier is read ahead of time by freeSpinTrigger for the intro; nothing to play here.
 	enterBonus: async (bookEvent: BookEventOfType<'enterBonus'>) => {
+		stateGame.bonusTier = bookEvent.tier;
 		eventEmitter.broadcast({ type: 'bonusTierShow', tier: bookEvent.tier });
 	},
 	wincap: async () => {},

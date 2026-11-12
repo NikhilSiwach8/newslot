@@ -22,8 +22,10 @@ fi
 
 # Placeholder art and sound: the SDK's cluster sample assets. These are not allowed in a
 # Stake Engine submission and must be replaced with original Stormglass Keep assets.
-if [ ! -d "${APP}/static" ]; then
-  cp -r "${SDK}/apps/cluster/static" "${APP}/static"
+# Stormglass Keep's own art in static/assets/stormglass/ is committed and is not overwritten.
+if [ ! -d "${APP}/static/assets/sprites" ]; then
+  mkdir -p "${APP}/static"
+  cp -rn "${SDK}/apps/cluster/static/." "${APP}/static/"
 fi
 
 (cd "${SDK}" && pnpm install)

@@ -8,7 +8,10 @@ web-sdk/*
 !web-sdk/apps/
 web-sdk/apps/*
 !web-sdk/apps/stormglass_keep/
-web-sdk/apps/stormglass_keep/static/
+web-sdk/apps/stormglass_keep/static/*
+!web-sdk/apps/stormglass_keep/static/assets/
+web-sdk/apps/stormglass_keep/static/assets/*
+!web-sdk/apps/stormglass_keep/static/assets/stormglass/
 node_modules/
 .svelte-kit/
 storybook-static/
