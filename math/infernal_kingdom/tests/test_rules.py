@@ -65,6 +65,7 @@ def check_round(book, gs, config):
     events = book["events"]
     # Payout equals the cap-limited attribution sum and never exceeds the cap.
     assert book["payoutMultiplier"] <= round(config.wincap * 100)
+    assert book["payoutMultiplier"] % 10 == 0, "Stake requires payouts in 0.1x steps"
     assert abs(sum(gs.attrib.values()) - gs.final_win) < 0.02
     assert abs(gs.win_manager.basegame_wins + gs.win_manager.freegame_wins - gs.final_win) < 0.02
     # Nothing pays after the cap is reached.

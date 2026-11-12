@@ -58,18 +58,20 @@ class GameConfig(Config):
         self.max_cascades = 60  # safety stop per evaluation sequence; never reached in testing
 
         # ---------------------------------------------------------- paytable
-        # Pay per way for 3, 4, 5, 6 of a kind.
+        # Pay per way for 3, 4, 5, 6 of a kind. Every value is a multiple of 0.1: Stake Engine
+        # requires every round payout to be a multiple of 0.1x the bet, and with integer ways
+        # and integer multipliers this keeps every win on that grid.
         pays = {
             "H1": (0.50, 1.00, 2.50, 5.00),  # Demon King
             "H2": (0.40, 0.80, 2.00, 4.00),  # Infernal Dragon
             "H3": (0.30, 0.60, 1.50, 3.00),  # Cursed Crown
-            "H4": (0.25, 0.50, 1.20, 2.50),  # Blood Chalice
+            "H4": (0.20, 0.50, 1.20, 2.40),  # Blood Chalice
             "H5": (0.20, 0.40, 1.00, 2.00),  # Soul Ring
             "L1": (0.10, 0.20, 0.50, 1.00),  # A
             "L2": (0.10, 0.20, 0.40, 0.80),  # K
-            "L3": (0.05, 0.10, 0.30, 0.60),  # Q
-            "L4": (0.05, 0.10, 0.25, 0.50),  # J
-            "L5": (0.05, 0.10, 0.20, 0.40),  # 10
+            "L3": (0.10, 0.10, 0.30, 0.60),  # Q
+            "L4": (0.10, 0.10, 0.20, 0.50),  # J
+            "L5": (0.10, 0.10, 0.20, 0.40),  # 10
         }
         self.paytable = {}
         for sym, values in pays.items():
@@ -133,7 +135,7 @@ class GameConfig(Config):
         self.wrath_wilds = {"base": {1: 3, 2: 1}, "blood": {2: 5, 3: 3, 4: 1}}
         self.lust_base_mult = 2
         self.envy_targets = {"H5": 4, "H4": 3, "H3": 2, "H2": 1}
-        self.harvest_factor = {"seal": 0.5, "pattern": 1.0}  # x the 3-of-a-kind pay per symbol
+        self.harvest_factor = {"seal": 1, "pattern": 2}  # x the 3-of-a-kind pay per symbol (integers keep 0.1x steps)
         self.gluttony_types = 2  # number of low symbol types devoured
         self.despair_reels = {"seal": 2, "pattern": 3}
         self.dominion_mult = {"base": 2, "bonus": 3}  # Infernal Dominion global multiplier

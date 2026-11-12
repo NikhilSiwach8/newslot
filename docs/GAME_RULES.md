@@ -27,13 +27,13 @@ drop in from above. Cascades continue while new wins form.
 | Demon King | 0.50 | 1.00 | 2.50 | 5.00 |
 | Infernal Dragon | 0.40 | 0.80 | 2.00 | 4.00 |
 | Cursed Crown | 0.30 | 0.60 | 1.50 | 3.00 |
-| Blood Chalice | 0.25 | 0.50 | 1.20 | 2.50 |
+| Blood Chalice | 0.20 | 0.50 | 1.20 | 2.40 |
 | Soul Ring | 0.20 | 0.40 | 1.00 | 2.00 |
 | A | 0.10 | 0.20 | 0.50 | 1.00 |
 | K | 0.10 | 0.20 | 0.40 | 0.80 |
-| Q | 0.05 | 0.10 | 0.30 | 0.60 |
-| J | 0.05 | 0.10 | 0.25 | 0.50 |
-| 10 | 0.05 | 0.10 | 0.20 | 0.40 |
+| Q | 0.10 | 0.10 | 0.30 | 0.60 |
+| J | 0.10 | 0.10 | 0.20 | 0.50 |
+| 10 | 0.10 | 0.10 | 0.20 | 0.40 |
 
 ## Special symbols
 
@@ -62,7 +62,7 @@ can only light after five other seals. Seals reset after every spin.
 | Seal | Power when it lights |
 |---|---|
 | Wrath | Hellfire: 1-2 symbols become wilds (2-4 with the Blood Pact) |
-| Greed | Soul Harvest: the most common symbol is collected for an instant win (0.5x its 3-of-a-kind pay each) |
+| Greed | Soul Harvest: the most common symbol is collected for an instant win (its 3-of-a-kind pay for each one) |
 | Envy | Corruption: every symbol of one low type becomes one premium symbol |
 | Pride | Infernal Shield: single wilds survive the next cascade |
 | Lust | Wild Attraction: one wild appears on reels 2-6 |
@@ -72,7 +72,7 @@ can only light after five other seals. Seals reset after every spin.
 | Dominion | Infernal Takeover |
 
 Completed lines on the seal board trigger, once each per spin, in this order:
-any row - **Hellfire** (a reel becomes wild); any column - **Soul Harvest**; any diagonal -
+any row - **Hellfire** (a reel becomes wild); any column - **Soul Harvest** (double the Greed pay); any diagonal -
 **Cataclysm** (three reels collapse); all nine seals - **Infernal Dominion** (every later win
 in the spin x2, x3 in free spins).
 

@@ -35,13 +35,13 @@ Paytable (x total bet per way):
 | H1 Demon King | 0.50 | 1.00 | 2.50 | 5.00 |
 | H2 Infernal Dragon | 0.40 | 0.80 | 2.00 | 4.00 |
 | H3 Cursed Crown | 0.30 | 0.60 | 1.50 | 3.00 |
-| H4 Blood Chalice | 0.25 | 0.50 | 1.20 | 2.50 |
+| H4 Blood Chalice | 0.20 | 0.50 | 1.20 | 2.40 |
 | H5 Soul Ring | 0.20 | 0.40 | 1.00 | 2.00 |
 | L1 A | 0.10 | 0.20 | 0.50 | 1.00 |
 | L2 K | 0.10 | 0.20 | 0.40 | 0.80 |
-| L3 Q | 0.05 | 0.10 | 0.30 | 0.60 |
-| L4 J | 0.05 | 0.10 | 0.25 | 0.50 |
-| L5 10 | 0.05 | 0.10 | 0.20 | 0.40 |
+| L3 Q | 0.10 | 0.10 | 0.30 | 0.60 |
+| L4 J | 0.10 | 0.10 | 0.20 | 0.50 |
+| L5 10 | 0.10 | 0.10 | 0.20 | 0.40 |
 
 ## 2. Spin sequence (one base spin or one free spin)
 
@@ -94,7 +94,7 @@ SP 0.004 / 0.005, HS 0.0004 / 0.001, DO 0.00005 / 0.0002.
 | Seal | Power |
 |---|---|
 | Wrath - Hellfire | 1-2 random cells become wilds (Blood Pact 2-4) |
-| Greed - Soul Harvest | The most common symbol is collected: pays 0.5 x its 3-kind pay per cell, cells removed and refilled |
+| Greed - Soul Harvest | The most common symbol is collected: pays 1x its 3-of-a-kind pay per cell, cells removed and refilled |
 | Envy - Symbol Corruption | Every cell of one low symbol becomes one premium (H2-H5) |
 | Pride - Infernal Shield | Single wilds survive the next removal (not Takeover/Hellfire/Apocalypse reels) |
 | Lust - Wild Attraction | One wild on reels 2-6 (x2 in the base game) |
@@ -105,7 +105,7 @@ SP 0.004 / 0.005, HS 0.0004 / 0.001, DO 0.00005 / 0.0002.
 
 **Patterns**, resolved in this order, each at most once per spin (once per board in Soul Pact):
 Hellfire (any row): one random reel 2-6 becomes wild. Soul Harvest (any column): Greed
-power at 1x. Cataclysm (any diagonal): Despair on 3 reels. Infernal Dominion (all nine):
+power at 2x. Cataclysm (any diagonal): Despair on 3 reels. Infernal Dominion (all nine):
 global multiplier x2 base / x3 bonus for the rest of the spin.
 
 Finite by construction: at most 9 seal activations and 4 patterns per spin; every power acts
@@ -212,3 +212,8 @@ once, to the highest-priority one.
 3. Soul Pact persistence also applied to Takeover reels; restricted to single wilds; Soul
    Pact Takeover multiplier lowered so it stays the lower-peak pact.
 4. Strip length 200 -> 260 to bring Hellfire Spins to about 1 in 365 base spins.
+5. Stake's format check requires every round payout to be a multiple of 0.1x. Pays of
+   0.05/0.25 and the 0.5x Soul Harvest broke that, so every pay is now a multiple of 0.1
+   (L3-L5 three-of-a-kind 0.10, H4 0.2/0.5/1.2/2.4) and Soul Harvest pays 1x (pattern 2x).
+   With integer ways and multipliers every win stays on the 0.1x grid; the rule tests
+   assert it for every book.

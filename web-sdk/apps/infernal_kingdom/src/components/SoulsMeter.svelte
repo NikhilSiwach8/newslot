@@ -25,6 +25,19 @@
 
 	const context = getContext();
 	const board = $derived(context.stateGameDerived.boardLayout());
+	// Stacked (portrait) layouts: a horizontal row above the reels, opposite the seals panel.
+	const stacked = $derived(context.stateLayoutDerived.isStacked());
+	const W = $derived(stacked ? SOULS.length * (ORB + GAP) + GAP : WIDTH);
+	const H = $derived(stacked ? ORB + SYMBOL_SIZE * 0.55 : HEIGHT);
+	const origin = $derived(
+		stacked
+			? { x: board.width - W, y: -H - SYMBOL_SIZE * 0.35 }
+			: { x: board.width + SYMBOL_SIZE * 0.35, y: (board.height - HEIGHT) / 2 },
+	);
+	const orb = (i: number) =>
+		stacked
+			? { x: GAP + i * (ORB + GAP), y: SYMBOL_SIZE * 0.3 }
+			: { x: (WIDTH - ORB) / 2, y: SYMBOL_SIZE * 0.38 + i * (ORB + GAP) };
 
 	let show = $state(false);
 	let collected = $state<SoulName[]>([]);
@@ -50,14 +63,13 @@
 
 <FadeContainer {show}>
 	<BoardContainer>
-		<Container x={board.width + SYMBOL_SIZE * 0.35} y={(board.height - HEIGHT) / 2}>
-			<Rectangle width={WIDTH} height={HEIGHT} borderRadius={10} backgroundColor={PALETTE.obsidian} backgroundAlpha={0.85} borderColor={PALETTE.gold} borderWidth={2} />
-			<Text x={WIDTH / 2} y={SYMBOL_SIZE * 0.2} anchor={0.5} text={`SOULS ${collected.length}/7`} style={{ fontFamily: 'proxima-nova', fontSize: SYMBOL_SIZE * 0.13, fontWeight: '800', fill: PALETTE.gold }} />
+		<Container {...origin}>
+			<Rectangle width={W} height={H} borderRadius={10} backgroundColor={PALETTE.obsidian} backgroundAlpha={0.85} borderColor={PALETTE.gold} borderWidth={2} />
+			<Text x={stacked ? GAP : W / 2} y={SYMBOL_SIZE * 0.15} anchor={stacked ? { x: 0, y: 0.5 } : 0.5} text={`SOULS ${collected.length}/7`} style={{ fontFamily: 'proxima-nova', fontSize: SYMBOL_SIZE * 0.13, fontWeight: '800', fill: PALETTE.gold }} />
 			{#each SOULS as soul, i}
 				{@const have = collected.includes(soul)}
 				<Circle
-					x={(WIDTH - ORB) / 2}
-					y={SYMBOL_SIZE * 0.38 + i * (ORB + GAP)}
+					{...orb(i)}
 					diameter={ORB}
 					backgroundColor={SOUL_COLORS[soul]}
 					backgroundAlpha={have ? 1 : 0.18}
@@ -65,7 +77,7 @@
 					borderWidth={fresh.includes(soul) ? 4 : 1}
 				/>
 			{/each}
-			<Text x={WIDTH / 2} y={HEIGHT - SYMBOL_SIZE * 0.16} anchor={0.5} text={`SHARDS ${shards}/3`} style={{ fontFamily: 'proxima-nova', fontSize: SYMBOL_SIZE * 0.11, fontWeight: '700', fill: 0xc9b8a0 }} />
+			<Text x={stacked ? W - GAP : W / 2} y={stacked ? SYMBOL_SIZE * 0.15 : H - SYMBOL_SIZE * 0.16} anchor={stacked ? { x: 1, y: 0.5 } : 0.5} text={`SHARDS ${shards}/3`} style={{ fontFamily: 'proxima-nova', fontSize: SYMBOL_SIZE * 0.11, fontWeight: '700', fill: 0xc9b8a0 }} />
 		</Container>
 	</BoardContainer>
 </FadeContainer>
