@@ -17,10 +17,7 @@ removed cleanly afterwards. Do not ask the model for transparency; it is unrelia
 
 Paste this at the end of every prompt:
 
-> Painterly stylised game art, hand-painted look with crisp readable silhouette, storm-lit
-> lighthouse theme, palette of deep teal and slate blue with warm amber lamp-light accents,
-> soft rim light, subtle wet-glass reflections, high detail, no text, no letters, no
-> numbers, no watermark, no border.
+> Hand-painted digital illustration in the style of a professional 2D mobile game art team: bold simplified shapes, a thick clean dark outline, flat colour areas with two or three hard-edged shading steps, visible confident brush strokes, one clear light source from the upper left, limited palette of deep teal, slate blue, brass and amber. Stylised, not photorealistic. No glossy plastic sheen, no lens flare, no bloom, no sparkles, no particles, no smoke, no excessive fine detail, no ornate filigree, no watermark, no border. No text, no letters, no numbers.
 
 ## 1. Style sheet (generate first)
 

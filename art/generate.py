@@ -16,9 +16,7 @@ MODEL = "gpt-image-2"
 RAW = os.path.join(os.path.dirname(os.path.abspath(__file__)), "raw")
 
 STYLE = (
-    "Painterly stylised game art, hand-painted look with a crisp readable silhouette, storm-lit "
-    "lighthouse theme, palette of deep teal and slate blue with warm amber lamp-light accents, soft rim "
-    "light, subtle wet-glass reflections, high detail, no watermark, no border."
+    "Hand-painted digital illustration in the style of a professional 2D mobile game art team: bold simplified shapes, a thick clean dark outline, flat colour areas with two or three hard-edged shading steps, visible confident brush strokes, one clear light source from the upper left, limited palette of deep teal, slate blue, brass and amber. Stylised, not photorealistic. No glossy plastic sheen, no lens flare, no bloom, no sparkles, no particles, no smoke, no excessive fine detail, no ornate filigree, no watermark, no border."
 )
 NO_TEXT = " No text, no letters, no numbers."
 MAGENTA = "isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background"
