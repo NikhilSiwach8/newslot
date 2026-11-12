@@ -26,12 +26,12 @@ if __name__ == "__main__":
     profiling = False
 
     num_sim_args = {
-        "base": int(1e4),
-        "surge": int(1e4),
-        "beam": int(1e4),
-        "bonus": int(1e4),
-        "super": int(1e4),
-        "mystery": int(1e4),
+        "base": int(1e5),
+        "surge": int(1e5),
+        "beam": int(1e5),
+        "bonus": int(1e5),
+        "super": int(1e5),
+        "mystery": int(1e5),
     }
 
     run_conditions = {
