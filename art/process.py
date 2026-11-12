@@ -10,7 +10,7 @@ import glob
 import os
 
 import numpy as np
-from PIL import Image, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RAW = os.path.join(HERE, "raw")
@@ -22,21 +22,37 @@ SYMBOLS = ["h1", "h2", "h3", "h4", "l1", "l2", "l3", "l4", "l5", "w", "s"]
 
 
 def key_out_magenta(image):
-    """Return RGBA with the magenta background transparent and fringe colour removed."""
-    rgb = np.asarray(image.convert("RGB")).astype(np.float32)
-    r, g, b = rgb[..., 0], rgb[..., 1], rgb[..., 2]
-    # "magenta-ness": how far red and blue both sit above green
-    excess = np.minimum(r, b) - g
-    alpha = np.clip((150.0 - excess) / 90.0, 0.0, 1.0)  # >=150 fully background, <=60 fully kept
-    # despill: pull red/blue back towards green where a magenta cast remains on edge pixels
-    spill = np.clip(excess, 0, None) * (alpha < 1.0)
-    rgb[..., 0] = r - spill * 0.9
-    rgb[..., 2] = b - spill * 0.9
-    out = np.dstack([np.clip(rgb, 0, 255), alpha * 255.0]).astype(np.uint8)
-    result = Image.fromarray(out, "RGBA")
-    # shave half a pixel off the edge so no fringe survives
-    a = result.getchannel("A").filter(ImageFilter.MinFilter(3)).filter(ImageFilter.GaussianBlur(0.6))
-    result.putalpha(a)
+    """Return RGBA with the magenta background transparent.
+
+    Only background connected to the image border is removed (flood fill from the edges), so
+    purple or pink areas inside a symbol's outline are never eaten by the key.
+    """
+    rgb = image.convert("RGB")
+    marker = (1, 254, 3)  # a colour that does not occur in the art
+    filled = rgb.copy()
+    w, h = filled.size
+    step = max(1, min(w, h) // 40)
+    seeds = [(x, y) for x in range(0, w, step) for y in (0, h - 1)] + [(x, y) for y in range(0, h, step) for x in (0, w - 1)]
+    for seed in seeds:
+        r, g, b = filled.getpixel(seed)
+        if min(r, b) - g > 120:  # still magenta, i.e. not already filled and not part of the art
+            ImageDraw.floodfill(filled, seed, marker, thresh=110)
+    background = np.all(np.asarray(filled) == marker, axis=-1)
+
+    pixels = np.asarray(rgb).astype(np.float32)
+    # enclosed holes (a key's bow, an anchor's ring): remove only near-pure magenta there
+    pure_magenta = (pixels[..., 0] > 215) & (pixels[..., 2] > 215) & (pixels[..., 1] < 70)
+    background |= pure_magenta
+    alpha = Image.fromarray(((~background) * 255).astype(np.uint8))
+    # shave the outer pixel and soften, so no magenta fringe survives on the outline
+    alpha = alpha.filter(ImageFilter.MinFilter(3)).filter(ImageFilter.GaussianBlur(0.8))
+    # despill only in a thin band next to the removed background
+    near_background = np.asarray(Image.fromarray((background * 255).astype(np.uint8)).filter(ImageFilter.MaxFilter(7))) > 0
+    excess = np.clip(np.minimum(pixels[..., 0], pixels[..., 2]) - pixels[..., 1], 0, None) * near_background
+    pixels[..., 0] -= excess * 0.9
+    pixels[..., 2] -= excess * 0.9
+    result = Image.fromarray(np.clip(pixels, 0, 255).astype(np.uint8), "RGB").convert("RGBA")
+    result.putalpha(alpha)
     return result
 
 
