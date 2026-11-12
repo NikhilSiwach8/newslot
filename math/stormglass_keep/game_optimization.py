@@ -2,8 +2,10 @@
 
 Each mode's criteria RTP shares must sum to the mode RTP (0.963).
 `hr` is "one in N bets"; for a criteria with `rtp` and `hr` the average win in base-bet
-multiples is rtp * hr * cost. Target bonus values used throughout:
-    Keeper's Watch ~96x, Eye of the Storm ~289x, The Drowned Light ~810x.
+multiples is rtp * hr * cost.
+The optimizer finds a criteria's books by its search conditions (force-record keys or a
+win range), not by its name; a criteria with neither takes whatever is left over. Target bonus values used throughout:
+    Keeper's Watch ~96x, Eye of the Storm ~289x, The Drowned Light ~900x.
 These are first-pass targets and must be re-derived from simulation results.
 """
 
@@ -47,15 +49,15 @@ class OptimizationSetup:
         buy_params = _parameters([10, 20, 50], [0.6, 0.2, 0.2])
 
         self.game_config.opt_params = {
-            # 0.005 + 0.0135 + 0.095 + 0.24 + 0.6095 = 0.963
+            # 0.005 + 0.015 + 0.095 + 0.24 + 0.608 = 0.963
             "base": {
                 "conditions": {
                     "wincap": wincap("base", 0.005),
-                    "drowned": ConstructConditions(rtp=0.0135, hr=60000).return_dict(),
-                    "eye": ConstructConditions(rtp=0.095, hr=3000).return_dict(),
-                    "watch": ConstructConditions(rtp=0.24, hr=400).return_dict(),
+                    "drowned": ConstructConditions(rtp=0.015, hr=60000, search_conditions={"bonus": "drowned"}).return_dict(),
+                    "eye": ConstructConditions(rtp=0.095, hr=3000, search_conditions={"bonus": "eye"}).return_dict(),
+                    "watch": ConstructConditions(rtp=0.24, hr=400, search_conditions={"bonus": "watch"}).return_dict(),
                     "0": zero,
-                    "basegame": ConstructConditions(rtp=0.6095, hr=3.6).return_dict(),
+                    "basegame": ConstructConditions(rtp=0.608, hr=3.6).return_dict(),
                 },
                 "scaling": no_scaling,
                 "parameters": spin_params,
@@ -64,9 +66,9 @@ class OptimizationSetup:
             "surge": {
                 "conditions": {
                     "wincap": wincap("surge", 0.005),
-                    "drowned": ConstructConditions(rtp=0.034, hr=7940).return_dict(),
-                    "eye": ConstructConditions(rtp=0.207, hr=465).return_dict(),
-                    "watch": ConstructConditions(rtp=0.516, hr=62).return_dict(),
+                    "drowned": ConstructConditions(rtp=0.034, hr=8824, search_conditions={"bonus": "drowned"}).return_dict(),
+                    "eye": ConstructConditions(rtp=0.207, hr=465, search_conditions={"bonus": "eye"}).return_dict(),
+                    "watch": ConstructConditions(rtp=0.516, hr=62, search_conditions={"bonus": "watch"}).return_dict(),
                     "0": zero,
                     "basegame": ConstructConditions(rtp=0.201, hr=3.6).return_dict(),
                 },
@@ -102,14 +104,14 @@ class OptimizationSetup:
                 "parameters": buy_params,
             },
             # Mystery Buy: 65% no bonus / 25% Eye of the Storm / 10% The Drowned Light.
-            # 0.003 + 0.5055 + 0.452 + 0.0025 = 0.963
+            # 0.003 + 0.5331 + 0.425 + 0.0019 = 0.963
             "mystery": {
                 "conditions": {
                     "wincap": wincap("mystery", 0.003),
-                    "drowned": ConstructConditions(rtp=0.5055, hr=10).return_dict(),
-                    "eye": ConstructConditions(rtp=0.452, hr=4).return_dict(),
-                    # hr = av_win / (rtp * cost) = 0.615 / (0.0025 * 160) = 1.54, i.e. 65% of buys
-                    "nobonus": ConstructConditions(rtp=0.0025, hr=1.5385).return_dict(),
+                    "drowned": ConstructConditions(rtp=0.5331, hr=10, search_conditions={"bonus": "drowned"}).return_dict(),
+                    "eye": ConstructConditions(rtp=0.425, hr=4, search_conditions={"bonus": "eye"}).return_dict(),
+                    # hr 1.5385 = 65% of buys; implied average win 0.5x
+                    "nobonus": ConstructConditions(rtp=0.0019, hr=1.5385).return_dict(),
                 },
                 "scaling": no_scaling,
                 "parameters": buy_params,

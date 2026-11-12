@@ -38,15 +38,15 @@ class GameConfig(Config):
         # Paytable: cluster-size bands -> payout
         t1, t2, t3, t4 = (5, 5), (6, 8), (9, 12), (13, 49)
         pays = {
-            "H1": (5.0, 12.5, 25.0, 60.0),  # keeper's key
-            "H2": (2.0, 5.0, 10.0, 40.0),  # anchor
-            "H3": (1.3, 3.2, 7.0, 30.0),  # bell
-            "H4": (1.0, 2.5, 6.0, 20.0),  # compass
-            "L1": (0.6, 1.5, 4.0, 10.0),
-            "L2": (0.4, 1.2, 3.5, 8.0),
-            "L3": (0.3, 1.0, 3.0, 6.0),
-            "L4": (0.2, 0.8, 2.5, 5.0),
-            "L5": (0.1, 0.5, 1.5, 4.0),
+            "H1": (8.0, 20.0, 40.0, 100.0),  # keeper's key
+            "H2": (3.2, 8.0, 16.0, 64.0),  # anchor
+            "H3": (2.0, 5.0, 11.0, 48.0),  # bell
+            "H4": (1.6, 4.0, 9.6, 32.0),  # compass
+            "L1": (1.0, 2.4, 6.4, 16.0),
+            "L2": (0.6, 1.9, 5.6, 13.0),
+            "L3": (0.5, 1.6, 4.8, 10.0),
+            "L4": (0.3, 1.3, 4.0, 8.0),
+            "L5": (0.2, 0.8, 2.4, 6.4),
         }
         pay_group = {}
         for sym, values in pays.items():
@@ -74,9 +74,10 @@ class GameConfig(Config):
         # --- Bonus tiers ---------------------------------------------------
         # Tier is decided by the number of scatters on the board when the tumbles end.
         self.bonus_tiers = {
-            "watch": {"scatters": 3, "spins": 10, "start_mult": 0, "max_mult": 128, "beam_start": 0},
-            "eye": {"scatters": 4, "spins": 12, "start_mult": 2, "max_mult": 128, "beam_start": 4},
-            "drowned": {"scatters": 5, "spins": 15, "start_mult": 4, "max_mult": 1024, "beam_start": 5},
+            # In every bonus the beam meter starts each spin at 2, so the second win in a row fires stage one.
+            "watch": {"scatters": 3, "spins": 10, "start_mult": 1, "max_mult": 128, "beam_start": 2},
+            "eye": {"scatters": 4, "spins": 12, "start_mult": 2, "max_mult": 128, "beam_start": 2},
+            "drowned": {"scatters": 5, "spins": 15, "start_mult": 4, "max_mult": 1024, "beam_start": 2},
         }
         self.retrigger_spins = 5
         self.max_retriggers = 1
@@ -197,7 +198,7 @@ class GameConfig(Config):
             # Beam Spin: six cells pre-charged at x4, meter starts at stage one, no bonus trigger.
             BetMode(
                 name="beam",
-                cost=25.0,
+                cost=20.0,
                 rtp=self.rtp,
                 max_win=mode_maxwins["beam"],
                 auto_close_disabled=False,
@@ -244,7 +245,7 @@ class GameConfig(Config):
             # The split is enforced by the optimizer hit-rates in game_optimization.py.
             BetMode(
                 name="mystery",
-                cost=160.0,
+                cost=170.0,
                 rtp=self.rtp,
                 max_win=mode_maxwins["mystery"],
                 auto_close_disabled=False,
