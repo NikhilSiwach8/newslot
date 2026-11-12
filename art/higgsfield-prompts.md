@@ -36,13 +36,13 @@ Prefix each with: *"Single slot-game symbol icon, centred, isolated on a flat so
 | `h2.png` | Anchor | a heavy iron ship's anchor wrapped with wet rope, teal patina, gold rim highlights |
 | `h3.png` | Bell | a brass ship's bell on a small bracket, polished with storm reflections |
 | `h4.png` | Compass | an open brass navigator's compass with a glowing needle |
-| `l1.png` | Sea glass, red | a smooth rounded piece of sea glass, deep ruby red, faceted like a gem, inner glow |
-| `l2.png` | Sea glass, amber | a smooth rounded piece of sea glass, warm amber, teardrop shape, inner glow |
-| `l3.png` | Sea glass, green | a smooth rounded piece of sea glass, emerald green, hexagonal shape, inner glow |
-| `l4.png` | Sea glass, blue | a smooth rounded piece of sea glass, cobalt blue, diamond shape, inner glow |
-| `l5.png` | Sea glass, violet | a smooth rounded piece of sea glass, pale violet, round pebble shape, inner glow |
-| `w.png` | Wild | a jagged bolt of white-gold lightning trapped inside a round glass orb with a brass ring, crackling energy |
-| `s.png` | Scatter | a storm lantern with a blazing amber flame, brass frame, light rays bursting outward |
+| `l1.png` | Sea glass, red | a smooth rounded piece of sea glass, deep ruby red, faceted like a gem |
+| `l2.png` | Sea glass, amber | a smooth rounded piece of sea glass, warm amber, teardrop shape |
+| `l3.png` | Sea glass, green | a smooth rounded piece of sea glass, emerald green, hexagonal shape |
+| `l4.png` | Sea glass, blue | a smooth rounded piece of sea glass, cobalt blue, diamond shape |
+| `l5.png` | Sea glass, violet | a smooth rounded piece of sea glass, pale violet, round pebble shape |
+| `w.png` | Wild | a jagged bolt of white-gold lightning trapped inside a round glass orb with a brass ring |
+| `s.png` | Scatter | a storm lantern with a blazing amber flame, brass frame |
 
 The five sea-glass pieces must differ in **shape as well as colour** so they are readable
 at small size and for colour-blind players.
