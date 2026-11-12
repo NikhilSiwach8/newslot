@@ -15,7 +15,7 @@ When exact behaviour matters, read the source rather than trusting this summary:
 pnpm add stake-engine
 ```
 
-In this repo the frontend lives in `web-sdk/apps/stormglass_keep`. The Stake web-sdk already ships its own RGS layer (`packages/rgs-fetcher`, `rgs-requests`); don't run both against the same session. Use this client for a frontend that is not built on that layer, or deliberately replace it.
+In this repo the frontend lives in `web-sdk/apps/infernal_kingdom`. The Stake web-sdk already ships its own RGS layer (`packages/rgs-fetcher`, `rgs-requests`); don't run both against the same session. Use this client for a frontend that is not built on that layer, or deliberately replace it.
 
 ## Setup
 

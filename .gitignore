@@ -7,14 +7,15 @@ math/*/library/
 web-sdk/*
 !web-sdk/apps/
 web-sdk/apps/*
-!web-sdk/apps/stormglass_keep/
-web-sdk/apps/stormglass_keep/static/*
-!web-sdk/apps/stormglass_keep/static/assets/
-web-sdk/apps/stormglass_keep/static/assets/*
-!web-sdk/apps/stormglass_keep/static/assets/stormglass/
+!web-sdk/apps/infernal_kingdom/
+web-sdk/apps/infernal_kingdom/static/*
+!web-sdk/apps/infernal_kingdom/static/assets/
+web-sdk/apps/infernal_kingdom/static/assets/*
+!web-sdk/apps/infernal_kingdom/static/assets/infernal/
 node_modules/
 .svelte-kit/
 storybook-static/
 
 # Upstream reference clones fetched by skills
 .upstream/
+web-sdk/apps/infernal_kingdom/build/

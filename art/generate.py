@@ -1,8 +1,13 @@
-"""Generate Stormglass Keep art with the OpenAI image API.
+"""Generate Infernal Kingdom art with the OpenAI image API.
 
     python3 art/generate.py [name ...]      # no names = everything not already in art/raw
 
-Reads OPENAI_API_KEY from the environment. Writes PNGs to art/raw/.
+Not run yet: the project currently uses labelled placeholders (art/placeholders.py).
+Reads OPENAI_API_KEY from the environment. Writes PNGs to art/raw/, then:
+
+    python3 art/process.py && python3 art/build_game_assets.py
+
+The same prompts, with notes, are in art/PROMPTS.md.
 """
 
 import base64
@@ -16,43 +21,64 @@ MODEL = "gpt-image-2"
 RAW = os.path.join(os.path.dirname(os.path.abspath(__file__)), "raw")
 
 STYLE = (
-    "Hand-painted digital illustration in the style of a professional 2D mobile game art team: bold simplified shapes, a thick clean dark outline, flat colour areas with two or three hard-edged shading steps, visible confident brush strokes, one clear light source from the upper left, limited palette of deep teal, slate blue, brass and amber. Stylised, not photorealistic. No glossy plastic sheen, no lens flare, no bloom, no sparkles, no particles, no smoke, no excessive fine detail, no ornate filigree, no watermark, no border."
+    "Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, "
+    "infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light "
+    "#14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, "
+    "glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp "
+    "silhouette readable at small size, consistent three-quarter front perspective and scale across the "
+    "set. Original design, not based on any existing game. No watermark, no border."
 )
 NO_TEXT = " No text, no letters, no numbers."
 MAGENTA = "isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background"
-SYMBOL = f"Single slot-game symbol icon, centred, filling about 80 percent of the frame, {MAGENTA}: "
-
+SYMBOL = f"Single slot-game symbol, centred, filling about 80 percent of the frame, {MAGENTA}: "
+LETTER = f"Single slot-game card symbol, centred, filling about 75 percent of the frame, {MAGENTA}: "
 SQUARE, WIDE, TALL = "1024x1024", "1536x1024", "1024x1536"
+CALM = " Keep the centre of the image darker and calmer so a 6 by 4 reel set can sit over it."
 
 ASSETS = {
-    # symbols
-    "h1": (SQUARE, SYMBOL + "an ornate antique brass lighthouse keeper's key with a glowing amber gem in the bow, gold rim."),
-    "h2": (SQUARE, SYMBOL + "a heavy iron ship's anchor wrapped with wet rope, teal patina, gold rim highlights."),
-    "h3": (SQUARE, SYMBOL + "a brass ship's bell on a small bracket, polished, with storm reflections."),
-    "h4": (SQUARE, SYMBOL + "an open brass navigator's compass with a glowing needle."),
-    "l1": (SQUARE, SYMBOL + "a smooth piece of sea glass, deep ruby red, cut like a faceted heart-shaped gem."),
-    "l2": (SQUARE, SYMBOL + "a smooth piece of sea glass, warm amber orange, teardrop shape."),
-    "l3": (SQUARE, SYMBOL + "a smooth piece of sea glass, emerald green, hexagonal shape."),
-    "l4": (SQUARE, SYMBOL + "a smooth piece of sea glass, cobalt blue, tall diamond shape."),
-    "l5": (SQUARE, SYMBOL + "a smooth piece of sea glass, pale violet, round pebble shape."),
-    "w": (SQUARE, SYMBOL + "a jagged bolt of white-gold lightning trapped inside a round glass orb held by a brass ring."),
-    "s": (SQUARE, SYMBOL + "a storm lantern with a blazing amber flame, brass frame."),
+    # premium symbols
+    "h1": (SQUARE, SYMBOL + "the Demon King, a horned infernal monarch, head and shoulders, obsidian skin with molten cracks, a black iron crown, burning gold eyes, regal and menacing."),
+    "h2": (SQUARE, SYMBOL + "an Infernal Dragon head in molten armour plates, lava glowing between the scales, jaws open with ember breath."),
+    "h3": (SQUARE, SYMBOL + "a Cursed Crown of black iron with jagged spikes and burning crimson gemstones."),
+    "h4": (SQUARE, SYMBOL + "a golden Blood Chalice with engraved runes, swirling red magical energy rising from the cup."),
+    "h5": (SQUARE, SYMBOL + "a cursed gold Soul Ring holding a large emerald with a trapped glowing soul inside."),
+    # low symbols
+    "l1": (SQUARE, LETTER + "the capital letter A in a heavy engraved serif, crimson enamel with a molten gold edge." ),
+    "l2": (SQUARE, LETTER + "the capital letter K in a heavy engraved serif, polished gold with dark engraving."),
+    "l3": (SQUARE, LETTER + "the capital letter Q in a heavy engraved serif, emerald enamel with a gold edge."),
+    "l4": (SQUARE, LETTER + "the capital letter J in a heavy engraved serif, brushed silver with dark engraving."),
+    "l5": (SQUARE, LETTER + "the number 10 in a heavy engraved serif, aged bronze with dark engraving."),
+    # specials
+    "w": (SQUARE, SYMBOL + "the Infernal Wild: the Demon King's burning crown emblem on a black iron shield edged with molten gold, flames rising behind."),
+    "hs": (SQUARE, SYMBOL + "the Hellstar: a five-pointed star forged from blackened iron with a white-hot molten core and orange flame points."),
+    "s": (SQUARE, SYMBOL + "the Hell Gate scatter: a gothic infernal portal arch of obsidian with violet fire swirling inside."),
+    "wb": (SQUARE, SYMBOL + "the Wild Bomb: a round black iron bomb bound with gold bands, a burning fuse, cracks leaking orange light."),
+    "gb": (SQUARE, SYMBOL + "the Golden Wild Bomb: a larger ornate bomb of polished molten gold with crimson gems and a blazing fuse."),
+    "sp": (SQUARE, SYMBOL + "the Split Symbol: a cracked obsidian rune tablet splitting into two halves with gold light pouring from the crack."),
+    "do": (SQUARE, SYMBOL + "the Demon Overlord: the Demon King in full figure, wings spread, mid-transformation into a pillar of flame."),
+    # seals and souls (UI)
+    **{f"seal_{n}": (SQUARE, SYMBOL + f"a round infernal seal medallion of blackened iron and gold, the sigil of {n.upper()} engraved at its centre, unlit.")
+       for n in ["wrath", "greed", "envy", "pride", "lust", "sloth", "gluttony", "despair", "dominion"]},
+    **{f"soul_{n}": (SQUARE, SYMBOL + f"a glowing soul gem, {c}, a faint ghostly face inside, gold claw setting.")
+       for n, c in [("wrath", "crimson"), ("greed", "gold"), ("envy", "emerald"), ("pride", "violet"),
+                    ("lust", "magenta"), ("sloth", "deep blue"), ("gluttony", "orange")]},
+    "apocalypse_crown": (SQUARE, SYMBOL + "the Apocalypse Crown: the Demon King's crown reforged in white-gold fire, seven coloured soul gems set around it."),
+    "pact_blood": (TALL, f"An infernal contract scroll, crimson parchment, molten weapons crossed above it, glowing crimson runes, a wax seal of blood, {MAGENTA}."),
+    "pact_soul": (TALL, f"An infernal contract scroll, golden parchment, emerald soul crystals above it, green magical runes, an emerald wax seal, {MAGENTA}."),
     # backgrounds
-    "bg_base_landscape": (WIDE, "Night storm seascape seen from a cliff, a tall stone lighthouse on the right third with its amber beam cutting through rain, crashing teal waves, lightning in heavy clouds, the centre of the image kept darker and calmer so a game board can sit over it."),
-    "bg_base_portrait": (TALL, "Night storm seascape composed vertically, a tall stone lighthouse rising at the top with its amber beam cutting through rain, lightning in heavy clouds, crashing teal waves at the bottom, the centre of the image kept darker and calmer so a game board can sit over it."),
-    "bg_bonus_landscape": (WIDE, "Inside a lighthouse lantern room at the height of a storm, a huge glass lens glowing amber, rain streaming down the tall windows, lightning outside, the centre of the image kept darker and calmer so a game board can sit over it."),
-    "bg_drowned_landscape": (WIDE, "A lighthouse lantern room sunk deep underwater, the lamp extinguished, cold blue-green light filtering down from above, drifting bubbles and kelp, eerie and quiet, the centre of the image kept darker and calmer so a game board can sit over it."),
-    # frame, logo, tile
-    "frame": (SQUARE, f"A square ornate picture frame made of riveted brass and weathered iron lighthouse glazing bars, seen straight on, the frame is thin (about 6 percent of the width on each side) and touches the image edges, the large empty centre is flat solid magenta #FF00FF, {MAGENTA}."),
-    "logo": (WIDE, f'Game logo lettering reading exactly "STORMGLASS KEEP" on two lines, bold cast-brass letters with glass inlays lit from within by amber light, a small lightning bolt accent, {MAGENTA}.'),
-    "tile_background": (TALL, "Bright storm-lit sky and sea, glowing teal and amber clouds lit from behind by lightning, bright all the way to the edges, no dark vignette, no dark corners."),
-    "tile_foreground": (TALL, f"The top of a lighthouse with its lantern blazing amber light and a lightning bolt striking it, large and centred, {MAGENTA}."),
+    "bg_base_landscape": (WIDE, "A gigantic infernal fortress on a volcanic plain, rivers of lava, volcanic mountains, demonic statues and burning chains, smoke and embers." + CALM),
+    "bg_base_portrait": (TALL, "A gigantic infernal fortress seen from below, rivers of lava at the bottom, volcanic mountains, demonic statues and burning chains." + CALM),
+    "bg_bonus_landscape": (WIDE, "Inside the Demon King's throne hall, an obsidian throne, emerald soul flames in braziers, gold and iron pillars." + CALM),
+    "bg_takeover_landscape": (WIDE, "The infernal fortress engulfed in crimson light, the sky turned red, the huge silhouette of the Demon King rising behind it." + CALM),
+    # frame and logo
+    "frame": (SQUARE, f"A square slot reel frame of blackened iron with molten-gold borders and engraved infernal runes, thin (about 6 percent of the width on each side), touching the image edges, the large empty centre flat solid magenta #FF00FF, {MAGENTA}."),
+    "logo": (WIDE, f'Game logo lettering reading exactly "INFERNAL KINGDOM" on two lines, forged molten-gold letters with blackened iron edges, small flames, a horned crown above, {MAGENTA}.'),
 }
 
 
 def generate(name):
     size, prompt = ASSETS[name]
-    full = prompt + " " + STYLE + ("" if name == "logo" else NO_TEXT)
+    full = prompt + " " + STYLE + ("" if name in ("logo", "l1", "l2", "l3", "l4", "l5") else NO_TEXT)
     body = json.dumps({"model": MODEL, "prompt": full, "size": size, "quality": "high", "n": 1}).encode()
     request = urllib.request.Request(
         "https://api.openai.com/v1/images/generations",

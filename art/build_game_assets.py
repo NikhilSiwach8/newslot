@@ -1,9 +1,10 @@
 """Pack processed art into the web app's static folder.
 
-    python3 art/process.py && python3 art/build_game_assets.py
+    python3 art/placeholders.py && python3 art/build_game_assets.py   # placeholders
+    python3 art/process.py && python3 art/build_game_assets.py        # generated art
 
-Writes web-sdk/apps/stormglass_keep/static/assets/stormglass/:
-  symbols.png + symbols.json   sprite sheet, frames named sg_<symbol>.png
+Writes web-sdk/apps/infernal_kingdom/static/assets/infernal/:
+  symbols.png + symbols.json   sprite sheet, frames named ik_<symbol>.png
   bg_*.webp                    backgrounds
 """
 
@@ -14,9 +15,9 @@ from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, "processed")
-OUT = os.path.join(HERE, "..", "web-sdk", "apps", "stormglass_keep", "static", "assets", "stormglass")
-SYMBOLS = ["h1", "h2", "h3", "h4", "l1", "l2", "l3", "l4", "l5", "w", "s"]
-BACKGROUNDS = ["bg_base_landscape", "bg_base_portrait", "bg_bonus", "bg_drowned"]
+OUT = os.path.join(HERE, "..", "web-sdk", "apps", "infernal_kingdom", "static", "assets", "infernal")
+SYMBOLS = ["h1", "h2", "h3", "h4", "h5", "l1", "l2", "l3", "l4", "l5", "w", "hs", "s", "wb", "gb", "sp", "do"]
+BACKGROUNDS = ["bg_base_landscape", "bg_base_portrait", "bg_bonus_landscape", "bg_takeover_landscape"]
 CELL, PAD, COLUMNS = 256, 2, 4
 
 
@@ -29,7 +30,7 @@ def build_symbol_sheet():
         symbol = Image.open(os.path.join(SRC, name + ".png")).convert("RGBA")
         x, y = (index % COLUMNS) * step + PAD, (index // COLUMNS) * step + PAD
         sheet.paste(symbol, (x, y))
-        frames[f"sg_{name}.png"] = {
+        frames[f"ik_{name}.png"] = {
             "frame": {"x": x, "y": y, "w": CELL, "h": CELL},
             "rotated": False,
             "trimmed": False,

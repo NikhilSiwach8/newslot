@@ -15,10 +15,10 @@ from PIL import Image, ImageDraw, ImageFilter
 HERE = os.path.dirname(os.path.abspath(__file__))
 RAW = os.path.join(HERE, "raw")
 OUT = os.path.join(HERE, "processed")
-SYMBOL_PX = 256  # board cells are 80px; 256 keeps symbols sharp on high-density screens
+SYMBOL_PX = 256  # board cells are 110px; 256 keeps symbols sharp on high-density screens
 SYMBOL_FILL = 0.92  # share of the canvas the trimmed symbol may occupy
-KEYED = {"h1", "h2", "h3", "h4", "l1", "l2", "l3", "l4", "l5", "w", "s", "frame", "logo", "tile_foreground"}
-SYMBOLS = ["h1", "h2", "h3", "h4", "l1", "l2", "l3", "l4", "l5", "w", "s"]
+SYMBOLS = ["h1", "h2", "h3", "h4", "h5", "l1", "l2", "l3", "l4", "l5", "w", "hs", "s", "wb", "gb", "sp", "do"]
+KEYED = set(SYMBOLS) | {"frame", "logo", "apocalypse_crown", "pact_blood", "pact_soul"} | {f"seal_{n}" for n in ["wrath", "greed", "envy", "pride", "lust", "sloth", "gluttony", "despair", "dominion"]} | {f"soul_{n}" for n in ["wrath", "greed", "envy", "pride", "lust", "sloth", "gluttony"]}
 
 
 def key_out_magenta(image):
