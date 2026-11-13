@@ -177,8 +177,8 @@ class GameConfig(Config):
         self.descent_max_mult = 25  # Abyssal Descent multiplier ceiling
         self.descent_purge = ["L4", "L5"]  # removed from every Abyssal Descent reveal before evaluation
         self.pacts = {
-            "blood": {"wild": "blood", "soul_rate_factor": 0.8, "seals_persist": False, "wild_persist": False},
-            "soul": {"wild": "soul", "soul_rate_factor": 1.5, "seals_persist": True, "wild_persist": True},
+            "blood": {"wild": "blood", "soul_rate_factor": 1.1, "seals_persist": False, "wild_persist": False},
+            "soul": {"wild": "soul", "soul_rate_factor": 1.25, "seals_persist": True, "wild_persist": True},
         }
 
         self.freespin_triggers = {
@@ -247,7 +247,7 @@ class GameConfig(Config):
             "hellfire": None, "covenant_blood": "blood", "covenant_soul": "soul",
             "abyssal": None, "furnace_blood": "blood", "furnace_soul": "soul",
         }
-        self.buy_costs = {"hellfire": 75.0, "covenant": 250.0, "abyssal": 350.0, "furnace": 550.0}
+        self.buy_costs = {"hellfire": 75.0, "covenant": 250.0, "abyssal": 275.0, "furnace": 500.0}
         self.bet_modes = [
             base_mode("base", "blood"),
             base_mode("base_soul", "soul"),

@@ -51,21 +51,21 @@ export default {
 			"max_win": 66666.0
 		},
 		"abyssal": {
-			"cost": 350.0,
+			"cost": 275.0,
 			"feature": false,
 			"buyBonus": true,
 			"rtp": 0.96,
 			"max_win": 66666.0
 		},
 		"furnace_blood": {
-			"cost": 550.0,
+			"cost": 500.0,
 			"feature": false,
 			"buyBonus": true,
 			"rtp": 0.96,
 			"max_win": 66666.0
 		},
 		"furnace_soul": {
-			"cost": 550.0,
+			"cost": 500.0,
 			"feature": false,
 			"buyBonus": true,
 			"rtp": 0.96,

@@ -145,7 +145,7 @@ pacts are simulated separately and optimised to the same RTP.
 | Takeover | x3 / x5 | x1 / x2 |
 | Single wilds | removed when they win | survive their first winning cascade |
 | Seals | reset each free spin | persist until all nine are lit |
-| Soul orb rate | x0.8 | x1.5 |
+| Soul orb rate | x1.1 | x1.25 |
 | Apocalypse | 3 reels, x7 | 2 reels, x5 |
 
 ### Seven Souls (all bonuses)
@@ -182,8 +182,8 @@ its payout comes from the board like any other.
 | base_soul | 1x | base game, Soul Pact for pact bonuses |
 | hellfire | 75x | Hellfire Spins |
 | covenant_blood / covenant_soul | 250x | Demon's Covenant with that pact |
-| abyssal | 350x | Abyssal Descent |
-| furnace_blood / furnace_soul | 550x | The Soul Furnace with that pact |
+| abyssal | 275x | Abyssal Descent |
+| furnace_blood / furnace_soul | 500x | The Soul Furnace with that pact |
 
 Target RTP 96.00% for every mode (`GameConfig.rtp`). Buy prices were set from measured
 natural bonus averages so the re-weighting stays small. `game_optimization.py` sets the
@@ -240,3 +240,7 @@ once, to the highest-priority one.
 8. With natural tails restored, the Furnace buys and the base SD broke Stake Studio's risk
    limits (which lower the allowed maximum bet). A tail down-weight for 10,000x+ books,
    chosen per mode as the gentlest that passes, brings all six risk checks back to pass.
+9. Natural play showed the Soul Pact paying far more than the Blood Pact in the Furnace
+   (~107% vs ~78%), driven by Soul orbs feeding the Apocalypse (1 in 43 Soul Furnaces).
+   Soul orb factors moved to Blood x1.1 / Soul x1.25 (Apocalypse 1 in ~96 Soul, ~377
+   Blood Furnaces) and prices to the measured averages: Abyssal 275x, Furnace 500x.

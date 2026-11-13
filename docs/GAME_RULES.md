@@ -131,8 +131,8 @@ reels are evaluated and cascade again. It does not guarantee any particular win.
 | Soul Pact (base game) | 1x bet | 96.00% |
 | Buy Hellfire Spins | 75x bet | 96.00% |
 | Buy Demon's Covenant (Blood or Soul) | 250x bet | 96.00% |
-| Buy Abyssal Descent | 350x bet | 96.00% |
-| Buy The Soul Furnace (Blood or Soul) | 550x bet | 96.00% |
+| Buy Abyssal Descent | 275x bet | 96.00% |
+| Buy The Soul Furnace (Blood or Soul) | 500x bet | 96.00% |
 
 RTP values are the theoretical return of each option over a very large number of rounds,
 taken from the optimised math model; see the math report for the exact figures.
