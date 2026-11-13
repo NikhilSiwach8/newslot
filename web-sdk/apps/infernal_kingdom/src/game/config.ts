@@ -30,21 +30,21 @@ export default {
 			"max_win": 66666.0
 		},
 		"hellfire": {
-			"cost": 100.0,
+			"cost": 75.0,
 			"feature": false,
 			"buyBonus": true,
 			"rtp": 0.96,
 			"max_win": 66666.0
 		},
 		"covenant_blood": {
-			"cost": 300.0,
+			"cost": 250.0,
 			"feature": false,
 			"buyBonus": true,
 			"rtp": 0.96,
 			"max_win": 66666.0
 		},
 		"covenant_soul": {
-			"cost": 300.0,
+			"cost": 250.0,
 			"feature": false,
 			"buyBonus": true,
 			"rtp": 0.96,
@@ -58,14 +58,14 @@ export default {
 			"max_win": 66666.0
 		},
 		"furnace_blood": {
-			"cost": 600.0,
+			"cost": 550.0,
 			"feature": false,
 			"buyBonus": true,
 			"rtp": 0.96,
 			"max_win": 66666.0
 		},
 		"furnace_soul": {
-			"cost": 600.0,
+			"cost": 550.0,
 			"feature": false,
 			"buyBonus": true,
 			"rtp": 0.96,
@@ -136,7 +136,7 @@ export default {
 		"H4": {
 			"paytable": [
 				{
-					"3": 0.25
+					"3": 0.2
 				},
 				{
 					"4": 0.5
@@ -145,7 +145,7 @@ export default {
 					"5": 1.2
 				},
 				{
-					"6": 2.5
+					"6": 2.4
 				}
 			]
 		},
@@ -206,7 +206,7 @@ export default {
 		"L3": {
 			"paytable": [
 				{
-					"3": 0.05
+					"3": 0.1
 				},
 				{
 					"4": 0.1
@@ -222,13 +222,13 @@ export default {
 		"L4": {
 			"paytable": [
 				{
-					"3": 0.05
+					"3": 0.1
 				},
 				{
 					"4": 0.1
 				},
 				{
-					"5": 0.25
+					"5": 0.2
 				},
 				{
 					"6": 0.5
@@ -238,7 +238,7 @@ export default {
 		"L5": {
 			"paytable": [
 				{
-					"3": 0.05
+					"3": 0.1
 				},
 				{
 					"4": 0.1

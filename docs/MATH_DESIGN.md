@@ -59,8 +59,8 @@ Paytable (x total bet per way):
    until an evaluation pays nothing.
 8. Bonus only: Soul Apocalypse, if due, with its own cascade loop.
 
-Removal exceptions: Hellstars never leave during the spin; shielded wilds and Time-Locked
-symbols survive one removal. Scatters are never removed or transformed.
+Removal exceptions: Hellstars survive two removals; shielded wilds and Time-Locked symbols
+survive one. Scatters are never removed or transformed.
 A safety stop ends a cascade sequence after 60 evaluations; it was never reached in testing
 (the rule tests assert this).
 
@@ -69,7 +69,7 @@ A safety stop ends a cascade sequence after 60 evaluations; it was never reached
 | Symbol | Where | Rule |
 |---|---|---|
 | W Infernal Wild | strips, reels 2-6 | Substitutes for H1-L5. Base x1; bonus multiplier from the bonus's wild table. |
-| HS Hellstar | lands, reels 2-6 | Sticky multiplier wild: x2/x3 base, x3/x5/x10 bonus. Stays for the whole spin. |
+| HS Hellstar | lands, reels 2-6 | Multiplier wild (x2/x3 base, x3/x5/x10 bonus) that survives its first two winning cascades. |
 | WB Wild Bomb | lands, reels 2-5 | Turns a 2x2 area (bomb = top-left, shifted onto the board) into wilds sharing one multiplier. +1 seal activation. |
 | GB Golden Wild Bomb | lands, reels 2-5 | 3x3 area centred on the bomb. Shared multiplier at least x1 base / x2 bonus. +2 seal activations. |
 | SP Split Symbol | lands, any reel | Becomes one regular symbol (weighted, premiums rarer) that counts as two. |
@@ -180,15 +180,15 @@ its payout comes from the board like any other.
 |---|---|---|
 | base | 1x | base game, Blood Pact for pact bonuses |
 | base_soul | 1x | base game, Soul Pact for pact bonuses |
-| hellfire | 100x | Hellfire Spins |
-| covenant_blood / covenant_soul | 300x | Demon's Covenant with that pact |
+| hellfire | 75x | Hellfire Spins |
+| covenant_blood / covenant_soul | 250x | Demon's Covenant with that pact |
 | abyssal | 350x | Abyssal Descent |
-| furnace_blood / furnace_soul | 600x | The Soul Furnace with that pact |
+| furnace_blood / furnace_soul | 550x | The Soul Furnace with that pact |
 
 Target RTP 96.00% for every mode (`GameConfig.rtp`). Buy prices were set from measured
 natural bonus averages so the optimizer's re-weighting stays small. The optimizer
-(`game_optimization.py`) sets the frequency targets: Hellfire 1 in 370, Covenant 1 in 2,700,
-Abyssal 1 in 12,000, Furnace 1 in 60,000, max win about 1 in 8.3 million base bets (Stake
+(`game_optimization.py`) sets the frequency targets: Hellfire 1 in 370, Covenant 1 in 3,500,
+Abyssal 1 in 14,000, Furnace 1 in 60,000, max win about 1 in 8.3 million base bets (Stake
 asks for better than 1 in 10 million).
 
 ## 9. RTP attribution
@@ -217,3 +217,10 @@ once, to the highest-priority one.
    (L3-L5 three-of-a-kind 0.10, H4 0.2/0.5/1.2/2.4) and Soul Harvest pays 1x (pattern 2x).
    With integer ways and multipliers every win stays on the 0.1x grid; the rule tests
    assert it for every book.
+6. The first full run showed bonus books hitting the 60-evaluation safety stop: Hellstars
+   stayed for the whole spin, so sticky x10 wilds kept completing wins after every refill.
+   Hellstars now survive two winning cascades; the deepest sequence measured afterwards was
+   10 evaluations. Bonus values fell, so buy prices moved to 75x / 250x / 350x / 550x.
+7. The optimizer had been asked for a base-game RTP of 0.54 against a natural ~0.67 and
+   met it by removing most 1x-5x wins (a gap Stake rejects). Base-game targets now sit
+   close to the natural split (see `game_optimization.py`).

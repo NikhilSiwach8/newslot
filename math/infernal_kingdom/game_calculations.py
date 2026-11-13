@@ -99,6 +99,7 @@ class GameCalculations(Executables):
             key = "base" if self.gametype == self.config.basegame_type else "bonus"
             sym.multiplier = int(get_random_outcome(self.config.hellstar_tables[key]))
             sym.src = "hellstar"
+            sym.shield = self.config.hellstar_persist
         return sym
 
     def wild_shield_default(self) -> int:

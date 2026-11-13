@@ -5,12 +5,14 @@ share below must sum to the mode RTP (0.96). `hr` is "one in N bets"; a criteria
 and hr has an average win of rtp * hr * cost (base-bet multiples).
 
 Base-game targets (both pacts), chosen from natural-play measurements (reports/):
-    Hellfire Spins   1 in 370   avg ~96x    rtp 0.260
-    Demon's Covenant 1 in 2,700 avg ~297x   rtp 0.110
-    Abyssal Descent  1 in 12,000 avg ~360x  rtp 0.030
-    The Soul Furnace 1 in 60,000 avg ~600x  rtp 0.010
+    Hellfire Spins   1 in 370    avg ~74x   rtp 0.200
+    Demon's Covenant 1 in 3,500  avg ~245x  rtp 0.070
+    Abyssal Descent  1 in 14,000 avg ~350x  rtp 0.025
+    The Soul Furnace 1 in 60,000 avg ~540x  rtp 0.009
     66,666x max win  1 in ~8.3M             rtp 0.008  (Stake asks for better than 1 in 10M)
-    base game wins                          rtp 0.542
+    base game wins                          rtp 0.648
+Targets sit close to the natural split (base game ~0.67 natural) so the optimizer does not
+have to cut whole win ranges to hit the RTP.
 Buy modes: max win rtp 0.004, the bonus itself 0.956.
 """
 
@@ -48,12 +50,12 @@ class OptimizationSetup:
             return {
                 "conditions": {
                     "wincap": wincap(0.008),
-                    "furnace": ConstructConditions(rtp=0.010, hr=60000, search_conditions={"bonus": "furnace"}).return_dict(),
-                    "abyssal": ConstructConditions(rtp=0.030, hr=12000, search_conditions={"bonus": "abyssal"}).return_dict(),
-                    "covenant": ConstructConditions(rtp=0.110, hr=2700, search_conditions={"bonus": "covenant"}).return_dict(),
-                    "hellfire": ConstructConditions(rtp=0.260, hr=370, search_conditions={"bonus": "hellfire"}).return_dict(),
+                    "furnace": ConstructConditions(rtp=0.009, hr=60000, search_conditions={"bonus": "furnace"}).return_dict(),
+                    "abyssal": ConstructConditions(rtp=0.025, hr=14000, search_conditions={"bonus": "abyssal"}).return_dict(),
+                    "covenant": ConstructConditions(rtp=0.070, hr=3500, search_conditions={"bonus": "covenant"}).return_dict(),
+                    "hellfire": ConstructConditions(rtp=0.200, hr=370, search_conditions={"bonus": "hellfire"}).return_dict(),
                     "0": zero,
-                    "basegame": ConstructConditions(rtp=0.542, hr=2.6).return_dict(),
+                    "basegame": ConstructConditions(rtp=0.648, hr=2.6).return_dict(),
                 },
                 "scaling": no_scaling,
                 "parameters": spin_params,

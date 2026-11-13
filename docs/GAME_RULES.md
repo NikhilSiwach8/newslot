@@ -41,8 +41,8 @@ drop in from above. Cascades continue while new wins form.
   carry a multiplier. A win needs at least one paying symbol.
 - **Wild multipliers**: the multipliers of the wilds in a win are added together. Wilds
   created together by one feature share one multiplier, counted once per win.
-- **Hellstar** (reels 2-6): a wild with a multiplier that stays on the reels for the whole
-  spin.
+- **Hellstar** (reels 2-6): a wild with a multiplier that stays on the reels through its
+  first two winning cascades.
 - **Wild Bomb** (reels 2-5): explodes when it lands and turns a 2x2 area into wilds.
 - **Golden Wild Bomb** (reels 2-5): turns the 3x3 area around it into wilds; in free spins
   they carry at least x2.
@@ -129,10 +129,10 @@ reels are evaluated and cascade again. It does not guarantee any particular win.
 |---|---|---|
 | Base game (Blood Pact) | 1x bet | 96.00% |
 | Soul Pact (base game) | 1x bet | 96.00% |
-| Buy Hellfire Spins | 100x bet | 96.00% |
-| Buy Demon's Covenant (Blood or Soul) | 300x bet | 96.00% |
+| Buy Hellfire Spins | 75x bet | 96.00% |
+| Buy Demon's Covenant (Blood or Soul) | 250x bet | 96.00% |
 | Buy Abyssal Descent | 350x bet | 96.00% |
-| Buy The Soul Furnace (Blood or Soul) | 600x bet | 96.00% |
+| Buy The Soul Furnace (Blood or Soul) | 550x bet | 96.00% |
 
 RTP values are the theoretical return of each option over a very large number of rounds,
 taken from the optimised math model; see the math report for the exact figures.

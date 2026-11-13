@@ -122,6 +122,9 @@ class GameConfig(Config):
             "abyssal_plus": {1: 55, 2: 33, 3: 10, 5: 2},
         }
         self.hellstar_tables = {"base": {2: 3, 3: 1}, "bonus": {3: 4, 5: 3, 10: 1}}
+        # A Hellstar survives this many winning cascades, then leaves like any wild. (Staying
+        # for the whole spin let sticky x10 wilds chain cascades without end.)
+        self.hellstar_persist = 2
         self.golden_bomb_min_mult = {"base": 1, "bonus": 2}  # Golden Wild Bomb multiplier floor
 
         # ---------------------------------------------------- Nine Hell Seals
@@ -244,7 +247,7 @@ class GameConfig(Config):
             "hellfire": None, "covenant_blood": "blood", "covenant_soul": "soul",
             "abyssal": None, "furnace_blood": "blood", "furnace_soul": "soul",
         }
-        self.buy_costs = {"hellfire": 100.0, "covenant": 300.0, "abyssal": 350.0, "furnace": 600.0}
+        self.buy_costs = {"hellfire": 75.0, "covenant": 250.0, "abyssal": 350.0, "furnace": 550.0}
         self.bet_modes = [
             base_mode("base", "blood"),
             base_mode("base_soul", "soul"),

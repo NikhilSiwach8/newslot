@@ -209,7 +209,7 @@ class GameExecutables(GameCalculations):
             for w in win_data["wins"]:
                 for r, row in w["positions"]:
                     s = self.board[r][row]
-                    if s.name == "HS" or s.lock > 0:
+                    if s.lock > 0:
                         continue
                     if s.shield > 0:
                         s.shield -= 1
