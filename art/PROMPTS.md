@@ -3,6 +3,8 @@
 Original visual identity for INFERNAL KINGDOM. Nothing here references an existing game's
 artwork. Generated from `art/generate.py` (same prompts); regenerate this file if you edit them.
 
+Copy-ready version (style already merged into every prompt, plus audio prompts): `art/PROMPTS_COPY.md`.
+
 Status: **not generated yet.** The game runs on labelled placeholders from `art/placeholders.py`.
 File names match `docs/ASSET_MANIFEST.md`, so final art replaces placeholders one for one.
 

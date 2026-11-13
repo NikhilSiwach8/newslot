@@ -1,0 +1,427 @@
+# Infernal Kingdom - copy-ready art prompts
+
+Each block below is a complete prompt: copy it, paste it into your image tool, and save the
+result under the file name in its heading. Nothing else needs to be added.
+
+## Before you start
+
+1. **Make `h1.png` (Demon King) first.** Once you like it, attach it as an image/style reference to every other prompt so all symbols share the same scale, perspective, lighting and finish.
+2. **Use the size or aspect ratio in each heading.** Square = 1024x1024 or larger.
+3. **Keep the magenta background.** Symbols, seals, souls, contracts, crown, frame and logo are made on flat magenta `#FF00FF`; the cut-out script removes it. Don't ask for a transparent background.
+4. **Save to `art/raw/<name>.png`**, then run:
+
+```bash
+python3 art/process.py && python3 art/build_game_assets.py
+```
+
+Recommended tools: GPT Image, Nano Banana Pro, Midjourney v7 or Flux, at high quality. For Midjourney, add the aspect flag shown (for example `--ar 1:1`).
+
+## Premium symbols
+
+### 1. `h1.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: the Demon King, a horned infernal monarch, head and shoulders, obsidian skin with molten cracks, a black iron crown, burning gold eyes, regal and menacing. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 2. `h2.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: an Infernal Dragon head in molten armour plates, lava glowing between the scales, jaws open with ember breath. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 3. `h3.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a Cursed Crown of black iron with jagged spikes and burning crimson gemstones. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 4. `h4.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a golden Blood Chalice with engraved runes, swirling red magical energy rising from the cup. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 5. `h5.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a cursed gold Soul Ring holding a large emerald with a trapped glowing soul inside. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+## Low symbols (card letters)
+
+### 6. `l1.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game card symbol, centred, filling about 75 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: the capital letter A in a heavy engraved serif, crimson enamel with a molten gold edge. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border.
+```
+
+### 7. `l2.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game card symbol, centred, filling about 75 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: the capital letter K in a heavy engraved serif, polished gold with dark engraving. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border.
+```
+
+### 8. `l3.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game card symbol, centred, filling about 75 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: the capital letter Q in a heavy engraved serif, emerald enamel with a gold edge. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border.
+```
+
+### 9. `l4.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game card symbol, centred, filling about 75 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: the capital letter J in a heavy engraved serif, brushed silver with dark engraving. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border.
+```
+
+### 10. `l5.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game card symbol, centred, filling about 75 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: the number 10 in a heavy engraved serif, aged bronze with dark engraving. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border.
+```
+
+## Special symbols
+
+### 11. `w.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: the Infernal Wild: the Demon King's burning crown emblem on a black iron shield edged with molten gold, flames rising behind. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 12. `hs.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: the Hellstar: a five-pointed star forged from blackened iron with a white-hot molten core and orange flame points. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 13. `s.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: the Hell Gate scatter: a gothic infernal portal arch of obsidian with violet fire swirling inside. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 14. `wb.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: the Wild Bomb: a round black iron bomb bound with gold bands, a burning fuse, cracks leaking orange light. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 15. `gb.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: the Golden Wild Bomb: a larger ornate bomb of polished molten gold with crimson gems and a blazing fuse. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 16. `sp.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: the Split Symbol: a cracked obsidian rune tablet splitting into two halves with gold light pouring from the crack. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 17. `do.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: the Demon Overlord: the Demon King in full figure, wings spread, mid-transformation into a pillar of flame. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+## Nine Hell Seals (UI)
+
+### 18. `seal_wrath.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a round infernal seal medallion of blackened iron and gold, the sigil of WRATH engraved at its centre, unlit. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 19. `seal_greed.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a round infernal seal medallion of blackened iron and gold, the sigil of GREED engraved at its centre, unlit. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 20. `seal_envy.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a round infernal seal medallion of blackened iron and gold, the sigil of ENVY engraved at its centre, unlit. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 21. `seal_pride.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a round infernal seal medallion of blackened iron and gold, the sigil of PRIDE engraved at its centre, unlit. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 22. `seal_lust.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a round infernal seal medallion of blackened iron and gold, the sigil of LUST engraved at its centre, unlit. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 23. `seal_sloth.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a round infernal seal medallion of blackened iron and gold, the sigil of SLOTH engraved at its centre, unlit. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 24. `seal_gluttony.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a round infernal seal medallion of blackened iron and gold, the sigil of GLUTTONY engraved at its centre, unlit. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 25. `seal_despair.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a round infernal seal medallion of blackened iron and gold, the sigil of DESPAIR engraved at its centre, unlit. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 26. `seal_dominion.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a round infernal seal medallion of blackened iron and gold, the sigil of DOMINION engraved at its centre, unlit. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+## Seven Souls (UI)
+
+### 27. `soul_wrath.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a glowing soul gem, crimson, a faint ghostly face inside, gold claw setting. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 28. `soul_greed.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a glowing soul gem, gold, a faint ghostly face inside, gold claw setting. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 29. `soul_envy.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a glowing soul gem, emerald, a faint ghostly face inside, gold claw setting. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 30. `soul_pride.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a glowing soul gem, violet, a faint ghostly face inside, gold claw setting. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 31. `soul_lust.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a glowing soul gem, magenta, a faint ghostly face inside, gold claw setting. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 32. `soul_sloth.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a glowing soul gem, deep blue, a faint ghostly face inside, gold claw setting. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 33. `soul_gluttony.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: a glowing soul gem, orange, a faint ghostly face inside, gold claw setting. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+## Feature art
+
+### 34. `apocalypse_crown.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+Single slot-game symbol, centred, filling about 80 percent of the frame, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background: the Apocalypse Crown: the Demon King's crown reforged in white-gold fire, seven coloured soul gems set around it. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 35. `pact_blood.png` - 2:3 portrait (1024x1536, Midjourney `--ar 2:3`)
+
+```text
+An infernal contract scroll, crimson parchment, molten weapons crossed above it, glowing crimson runes, a wax seal of blood, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 36. `pact_soul.png` - 2:3 portrait (1024x1536, Midjourney `--ar 2:3`)
+
+```text
+An infernal contract scroll, golden parchment, emerald soul crystals above it, green magical runes, an emerald wax seal, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+## Backgrounds
+
+### 37. `bg_base_landscape.png` - 3:2 landscape (1536x1024, Midjourney `--ar 3:2`)
+
+```text
+A gigantic infernal fortress on a volcanic plain, rivers of lava, volcanic mountains, demonic statues and burning chains, smoke and embers. Keep the centre of the image darker and calmer so a 6 by 4 reel set can sit over it. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 38. `bg_base_portrait.png` - 2:3 portrait (1024x1536, Midjourney `--ar 2:3`)
+
+```text
+A gigantic infernal fortress seen from below, rivers of lava at the bottom, volcanic mountains, demonic statues and burning chains. Keep the centre of the image darker and calmer so a 6 by 4 reel set can sit over it. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 39. `bg_bonus_landscape.png` - 3:2 landscape (1536x1024, Midjourney `--ar 3:2`)
+
+```text
+Inside the Demon King's throne hall, an obsidian throne, emerald soul flames in braziers, gold and iron pillars. Keep the centre of the image darker and calmer so a 6 by 4 reel set can sit over it. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 40. `bg_takeover_landscape.png` - 3:2 landscape (1536x1024, Midjourney `--ar 3:2`)
+
+```text
+The infernal fortress engulfed in crimson light, the sky turned red, the huge silhouette of the Demon King rising behind it. Keep the centre of the image darker and calmer so a 6 by 4 reel set can sit over it. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+## Frame and logo
+
+### 41. `frame.png` - 1:1 square (1024x1024, Midjourney `--ar 1:1`)
+
+```text
+A square slot reel frame of blackened iron with molten-gold borders and engraved infernal runes, thin (about 6 percent of the width on each side), touching the image edges, the large empty centre flat solid magenta #FF00FF, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border. No text, no letters, no numbers.
+```
+
+### 42. `logo.png` - 3:2 landscape (1536x1024, Midjourney `--ar 3:2`)
+
+```text
+Game logo lettering reading exactly "INFERNAL KINGDOM" on two lines, forged molten-gold letters with blackened iron edges, small flames, a horned crown above, isolated on a perfectly flat solid magenta #FF00FF background with no gradient and no shadow on the background. Premium cinematic 3D casino-game render, dark fantasy: molten gold #D6A04A, blood crimson #A51D24, infernal orange #FF6A00, obsidian #080708 and blackened iron #211A1A, with rare emerald soul light #14B86E and violet magic #923DCE as accents. Physically based materials (forged iron, polished gold, glowing lava, faceted gems), one strong warm key light from the upper left, a cool rim light, crisp silhouette readable at small size, consistent three-quarter front perspective and scale across the set. Original design, not based on any existing game. No watermark, no border.
+```
+
+## Audio prompts
+
+For AI music and sound tools (Suno or Udio for music, ElevenLabs Sound Effects or similar for effects). Export WAV/OGG and keep every name below; the current build still plays the Stake SDK sample sounds.
+
+### A1. `bgm_main` - music, 60-90 s seamless loop
+
+```text
+Dark fantasy casino slot background music, slow and heavy, 70 BPM, low male choir humming, deep orchestral strings, distant war drums, low brass swells, subtle crackling fire ambience, ominous but not distracting, no vocals with words, seamless loop, mixed to sit under sound effects.
+```
+
+### A2. `bgm_freespin` - music, 60-90 s seamless loop
+
+```text
+Intense dark fantasy free-spins music, 120 BPM, driving orchestral percussion, brass stabs, full choir chanting wordless syllables, chugging distorted metal guitar underneath, rising energy, triumphant and menacing, seamless loop, no lyrics.
+```
+
+### A3. `bgm_takeover` - music, 4 s sting into 30 s loop
+
+```text
+Short crimson horror sting: a massive low brass hit and demonic growl, then a pounding 130 BPM loop of taiko drums, low choir and screeching strings, urgent and threatening, seamless loop, no lyrics.
+```
+
+### A4. `bgm_apocalypse` - music, 20-30 s
+
+```text
+Epic climax cue: pipe organ and full choir rising in a long crescendo, timpani rolls, brass fanfare at the peak, then a held, ringing final chord, dark fantasy apocalypse, no lyrics.
+```
+
+### A5. `sfx_reel_stop` - effect, 0.3 s
+
+```text
+Heavy iron slab landing on stone, short deep thud with a tiny metallic ring, clean, no reverb tail.
+```
+
+### A6. `sfx_cascade` - effect, 0.6 s
+
+```text
+Symbols burning to ash: quick fire whoosh into a dry crumbling ash sound, light and fast.
+```
+
+### A7. `sfx_win_small` - effect, 0.8 s
+
+```text
+A few gold coins dropping onto stone with a soft magical shimmer.
+```
+
+### A8. `sfx_win_big` - effect, 2.5 s
+
+```text
+Cascade of gold coins with a bold orchestral brass hit and choir swell.
+```
+
+### A9. `sfx_win_max` - effect, 5 s
+
+```text
+Huge orchestral and choir climax with a pouring flood of gold coins and a deep demonic laugh at the end.
+```
+
+### A10. `sfx_wild_land` - effect, 0.5 s
+
+```text
+Heavy crown emblem slamming down, metallic clang with a burst of flame.
+```
+
+### A11. `sfx_bomb` - effect, 1 s
+
+```text
+Fizzing fuse then a punchy fiery explosion, orange fire burst, short debris tail.
+```
+
+### A12. `sfx_golden_bomb` - effect, 1.6 s
+
+```text
+Bigger, brighter explosion with a rich golden shimmer and molten metal splash, more majestic than a normal bomb.
+```
+
+### A13. `sfx_split` - effect, 0.6 s
+
+```text
+Stone tablet cracking in two, with bright magical light pouring out.
+```
+
+### A14. `sfx_overlord` - effect, 2 s
+
+```text
+Deep demonic roar, wings unfolding with a heavy whoosh, then a roaring column of fire.
+```
+
+### A15. `sfx_seal_light` - effect, 0.7 s
+
+```text
+Ancient sigil igniting: a low magical hum rising into a short fiery flare.
+```
+
+### A16. `sfx_seal_pattern` - effect, 1.5 s
+
+```text
+Three sigils linking with crackling energy, ending in a resonant bell-like boom.
+```
+
+### A17. `sfx_takeover` - effect, 2.5 s
+
+```text
+The sky turning red: rumbling earthquake, deep demonic growl and fire roaring up.
+```
+
+### A18. `sfx_bargain_seal` - effect, 1.2 s
+
+```text
+Parchment unrolling, then hot wax pressed with a heavy stamp and a short ominous chord.
+```
+
+### A19. `sfx_soul_collect` - effect, 0.6 s
+
+```text
+Ghostly whoosh flying away and landing as a clear crystal chime.
+```
+
+### A20. `sfx_soul_shard` - effect, 0.4 s
+
+```text
+Small glassy crack with a faint magical sparkle.
+```
+
+### A21. `sfx_apocalypse` - effect, 4 s
+
+```text
+Time freezing: sound sucks inward to silence, souls whispering in a circle, then a blinding white-gold burst of fire.
+```
+
+### A22. `vo_demon_king_laugh` - voice texture, 2 s
+
+```text
+Deep, slow demonic laugh, processed and resonant, no words.
+```
+
+### A23. `vo_demon_king_growl` - voice texture, 1.5 s
+
+```text
+Low menacing demonic growl, breathy and distorted, no words.
+```
