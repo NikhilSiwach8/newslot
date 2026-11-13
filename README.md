@@ -58,7 +58,7 @@ cd web-sdk/apps/infernal_kingdom && PUBLIC_CHROMATIC=true npx storybook dev -p 6
   Stake Engine round is fully decided when the bet is placed.
 - Not yet run inside Stake Engine itself: tested with Storybook against real books and the
   SDK's format checks (all eight modes pass, 6 of 6 Studio risk checks).
-- Every mode publishes at exactly 96.00%, but the raw mechanics differ by pact: natural
-  play measures Furnace Blood ~78% vs Soul ~107% and Abyssal ~76% of its price (see
-  `math/infernal_kingdom/reports/MATH_REPORT.md`). The published weights close the gap; tuning
-  the mechanics closer before submission would reduce that re-weighting.
+- Every mode publishes at exactly 96.00%. Raw mechanics (natural play, 20,000 bonuses each)
+  sit at 88-109%: Furnace Blood ~88% vs Soul ~100%, Covenant Blood ~90% vs Soul ~109%. The
+  published weights close the gap with small tilts; Covenant could be tuned closer still.
+  See `math/infernal_kingdom/reports/MATH_REPORT.md`.

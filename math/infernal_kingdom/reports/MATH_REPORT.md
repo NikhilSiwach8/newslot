@@ -8,14 +8,14 @@ Target RTP 96.00% for every mode. Max win 66,666x the base bet per round.
 
 | Mode | Cost | RTP | Hit rate | SD per bet | Max win frequency | Max payout seen | Books | Non-zero-weight books | Effective sample |
 |---|---|---|---|---|---|---|---|---|---|
-| base | 1x | 96.0000% | 38.77% | 59.2 | 1 in 3,394,587 | 66,666.00x | 100,000 | 100,000 | 81,397 |
-| base_soul | 1x | 96.0000% | 38.77% | 58.1 | 1 in 5,250,179 | 66,666.00x | 100,000 | 100,000 | 81,397 |
-| hellfire | 75x | 96.0000% | 98.76% | 9.1 | 1 in 39,025 | 66,666.00x | 100,000 | 100,000 | 99,893 |
-| covenant_blood | 250x | 96.0000% | 99.43% | 7.4 | 1 in 4,707 | 66,666.00x | 100,000 | 100,000 | 99,797 |
-| covenant_soul | 250x | 96.0000% | 99.35% | 7.7 | 1 in 3,203 | 66,666.00x | 100,000 | 100,000 | 99,588 |
-| abyssal | 350x | 96.0000% | 99.14% | 5.7 | 1 in 4,161 | 66,666.00x | 100,000 | 100,000 | 99,067 |
-| furnace_blood | 550x | 96.0000% | 99.75% | 3.8 | 1 in 3,710 | 66,666.00x | 100,000 | 100,000 | 85,024 |
-| furnace_soul | 550x | 96.0000% | 99.66% | 3.5 | 1 in 3,813 | 66,666.00x | 100,000 | 100,000 | 94,014 |
+| base | 1x | 96.0000% | 38.77% | 59.2 | 1 in 3,282,220 | 66,666.00x | 100,000 | 100,000 | 81,397 |
+| base_soul | 1x | 96.0000% | 38.77% | 59.2 | 1 in 4,661,071 | 66,666.00x | 100,000 | 100,000 | 81,397 |
+| hellfire | 75x | 96.0000% | 98.76% | 9.1 | 1 in 39,156 | 66,666.00x | 100,000 | 100,000 | 99,894 |
+| covenant_blood | 250x | 96.0000% | 99.43% | 7.5 | 1 in 4,394 | 66,666.00x | 100,000 | 100,000 | 99,844 |
+| covenant_soul | 250x | 96.0000% | 99.41% | 7.5 | 1 in 3,441 | 66,666.00x | 100,000 | 100,000 | 99,851 |
+| abyssal | 275x | 96.0000% | 98.94% | 6.1 | 1 in 6,238 | 66,666.00x | 100,000 | 100,000 | 99,893 |
+| furnace_blood | 500x | 96.0000% | 99.69% | 3.9 | 1 in 4,686 | 66,666.00x | 100,000 | 100,000 | 90,104 |
+| furnace_soul | 500x | 96.0000% | 99.64% | 3.9 | 1 in 3,741 | 66,666.00x | 100,000 | 100,000 | 96,053 |
 
 RTP spread across modes: 96.0000% to 96.0000% (0.000 points; Stake allows 0.5).
 
@@ -25,8 +25,8 @@ RTP spread across modes: 96.0000% to 96.0000% (0.000 points; Stake allows 0.5).
 
 | Section | RTP |
 |---|---|
-| Base game | 64.8886% |
-| Hellfire Spins | 19.9200% |
+| Base game | 64.8883% |
+| Hellfire Spins | 19.9204% |
 | Demon's Covenant | 6.9927% |
 | Abyssal Descent | 2.4990% |
 | The Soul Furnace | 1.6996% |
@@ -35,43 +35,43 @@ RTP spread across modes: 96.0000% to 96.0000% (0.000 points; Stake allows 0.5).
 
 | Feature | RTP |
 |---|---|
-| regular wins (first evaluation) | 29.3173% |
-| Golden Wild Bombs | 24.1430% |
-| Nine Hell Seals | 13.1983% |
-| Wild Bombs | 10.8793% |
-| cascade wins | 9.0053% |
-| Infernal Takeover | 4.4732% |
-| Hellstars | 2.2317% |
-| Split Symbols | 1.5791% |
-| Demon Overlord | 0.8690% |
+| regular wins (first evaluation) | 29.3190% |
+| Golden Wild Bombs | 23.6919% |
+| Nine Hell Seals | 13.2605% |
+| Wild Bombs | 11.2156% |
+| cascade wins | 9.0172% |
+| Infernal Takeover | 4.4777% |
+| Hellstars | 2.2196% |
+| Split Symbols | 1.5794% |
+| Demon Overlord | 0.8569% |
 | Abyssal Descent multiplier | 0.1827% |
-| Seven Souls milestone wilds | 0.1055% |
-| Soul Apocalypse | 0.0157% |
+| Seven Souls milestone wilds | 0.1172% |
+| Soul Apocalypse | 0.0623% |
 
 ### Bonuses
 
 | Bonus | Frequency | Average payout | SD | Largest | RTP share |
 |---|---|---|---|---|---|
-| Hellfire Spins | 1 in 370 | 74.0x | 718.4 | 44,934x | 20.0000% |
-| Demon's Covenant | 1 in 3,500 | 245.0x | 1,794.6 | 66,666x | 7.0000% |
+| Hellfire Spins | 1 in 370 | 74.0x | 716.5 | 44,934x | 20.0000% |
+| Demon's Covenant | 1 in 3,500 | 245.0x | 1,769.7 | 66,666x | 7.0000% |
 | Abyssal Descent | 1 in 14,000 | 350.0x | 2,386.8 | 66,666x | 2.5000% |
-| The Soul Furnace | 1 in 59,571 | 1,012.7x | 6,370.2 | 66,666x | 1.7000% |
+| The Soul Furnace | 1 in 59,571 | 1,012.7x | 6,538.3 | 66,666x | 1.7000% |
 
 ### Feature frequency (rounds containing it)
 
 | Feature | Frequency |
 |---|---|
-| Soul Apocalypse | 1 in 416,662,500 (0.0000%) |
-| Golden Wild Bomb | 1 in 2,017 (0.0496%) |
-| Demon Overlord | 1 in 1,164 (0.0859%) |
+| Soul Apocalypse | 1 in 92,591,667 (0.0000%) |
+| Golden Wild Bomb | 1 in 2,014 (0.0497%) |
+| Demon Overlord | 1 in 1,162 (0.0860%) |
 | Seal pattern | 1 in 294 (0.3403%) |
-| Bonus retrigger | 1 in 8,394 (0.0119%) |
-| Seven Souls completed | 1 in 416,662,500 (0.0000%) |
-| Soul awarded by shards | 1 in 1,080,038 (0.0001%) |
-| Split Symbol | 1 in 10 (10.2523%) |
-| Infernal Takeover | 1 in 1,572 (0.0636%) |
-| Wild Bomb | 1 in 155 (0.6454%) |
-| 66,666x max win | 1 in 3,394,587 (0.0000%) |
+| Bonus retrigger | 1 in 8,401 (0.0119%) |
+| Seven Souls completed | 1 in 92,591,667 (0.0000%) |
+| Soul awarded by shards | 1 in 597,732 (0.0002%) |
+| Split Symbol | 1 in 10 (10.2526%) |
+| Infernal Takeover | 1 in 1,573 (0.0636%) |
+| Wild Bomb | 1 in 155 (0.6456%) |
+| 66,666x max win | 1 in 3,282,220 (0.0000%) |
 
 Deepest cascade sequence in the book set: 11 evaluations (safety stop 60).
 
@@ -79,32 +79,32 @@ Deepest cascade sequence in the book set: 11 evaluations (safety stop 60).
 
 | Payout (x bet) | Share of rounds |
 |---|---|
-| 0 | 61.23400% |
-| 1e-06 to <1 | 27.05571% |
-| 1 to <2 | 5.33045% |
-| 2 to <5 | 4.23915% |
-| 5 to <10 | 1.21912% |
-| 10 to <20 | 0.50747% |
+| 0 | 61.23405% |
+| 1e-06 to <1 | 27.05551% |
+| 1 to <2 | 5.33053% |
+| 2 to <5 | 4.23870% |
+| 5 to <10 | 1.21935% |
+| 10 to <20 | 0.50761% |
 | 20 to <50 | 0.26507% |
-| 50 to <100 | 0.07890% |
-| 100 to <250 | 0.04174% |
-| 250 to <500 | 0.01530% |
-| 500 to <1000 | 0.00816% |
-| 1000 to <2500 | 0.00301% |
-| 2500 to <5000 | 0.00091% |
-| 5000 to <10000 | 0.00071% |
-| 10000 to <25000 | 0.00021% |
+| 50 to <100 | 0.07870% |
+| 100 to <250 | 0.04170% |
+| 250 to <500 | 0.01548% |
+| 500 to <1000 | 0.00830% |
+| 1000 to <2500 | 0.00317% |
+| 2500 to <5000 | 0.00084% |
+| 5000 to <10000 | 0.00068% |
+| 10000 to <25000 | 0.00023% |
 | 25000 to <66666 | 0.00005% |
 | 66,666 (max win) | 0.00003% |
 
 ### Natural play (200,000 rounds, no re-weighting)
 
-RTP 99.51% ± 29.67% (95% CI), hit rate 37.88%, SD 67.7, largest 29,444x, max wins 0.
+RTP 99.39% ± 29.67% (95% CI), hit rate 37.88%, SD 67.7, largest 29,444x, max wins 0.
 
 | Bonus | Natural frequency | Average bonus win |
 |---|---|---|
 | Hellfire Spins | 1 in 362 (552 seen) | 112.9x |
-| Demon's Covenant | 1 in 11,765 (17 seen) | 129.3x |
+| Demon's Covenant | 1 in 11,765 (17 seen) | 115.0x |
 | Abyssal Descent | 1 in 200,000 (1 seen) | 16.6x |
 
 ## base_soul (1x)
@@ -113,8 +113,8 @@ RTP 99.51% ± 29.67% (95% CI), hit rate 37.88%, SD 67.7, largest 29,444x, max wi
 
 | Section | RTP |
 |---|---|
-| Base game | 64.8878% |
-| Hellfire Spins | 19.9207% |
+| Base game | 64.8873% |
+| Hellfire Spins | 19.9212% |
 | Demon's Covenant | 6.9928% |
 | Abyssal Descent | 2.4990% |
 | The Soul Furnace | 1.6996% |
@@ -123,43 +123,43 @@ RTP 99.51% ± 29.67% (95% CI), hit rate 37.88%, SD 67.7, largest 29,444x, max wi
 
 | Feature | RTP |
 |---|---|
-| regular wins (first evaluation) | 29.2308% |
-| Golden Wild Bombs | 20.7891% |
-| Nine Hell Seals | 12.9554% |
-| Wild Bombs | 10.6379% |
+| regular wins (first evaluation) | 29.2416% |
+| Golden Wild Bombs | 20.5843% |
+| Nine Hell Seals | 12.8638% |
+| Wild Bombs | 10.6450% |
 | cascade wins | 8.9923% |
-| Infernal Takeover | 8.2898% |
-| Hellstars | 2.2213% |
-| Split Symbols | 1.5782% |
-| Demon Overlord | 0.8243% |
-| Abyssal Descent multiplier | 0.1766% |
-| Soul Apocalypse | 0.1766% |
-| Seven Souls milestone wilds | 0.1276% |
+| Infernal Takeover | 8.7443% |
+| Hellstars | 2.2133% |
+| Split Symbols | 1.5796% |
+| Demon Overlord | 0.8220% |
+| Abyssal Descent multiplier | 0.1767% |
+| Seven Souls milestone wilds | 0.1135% |
+| Soul Apocalypse | 0.0237% |
 
 ### Bonuses
 
 | Bonus | Frequency | Average payout | SD | Largest | RTP share |
 |---|---|---|---|---|---|
-| Hellfire Spins | 1 in 370 | 74.0x | 769.9 | 44,934x | 20.0000% |
-| Demon's Covenant | 1 in 3,500 | 245.0x | 1,446.3 | 43,206x | 7.0000% |
-| Abyssal Descent | 1 in 14,000 | 350.0x | 2,494.9 | 66,666x | 2.5000% |
-| The Soul Furnace | 1 in 59,571 | 1,012.7x | 6,154.7 | 66,666x | 1.7000% |
+| Hellfire Spins | 1 in 370 | 74.0x | 769.0 | 44,934x | 20.0000% |
+| Demon's Covenant | 1 in 3,500 | 245.0x | 1,459.5 | 43,206x | 7.0000% |
+| Abyssal Descent | 1 in 14,000 | 350.0x | 2,496.9 | 66,666x | 2.5000% |
+| The Soul Furnace | 1 in 59,571 | 1,012.7x | 6,714.8 | 66,666x | 1.7000% |
 
 ### Feature frequency (rounds containing it)
 
 | Feature | Frequency |
 |---|---|
-| Soul Apocalypse | 1 in 1,378,624 (0.0001%) |
-| Golden Wild Bomb | 1 in 2,041 (0.0490%) |
-| Demon Overlord | 1 in 1,165 (0.0859%) |
-| Seal pattern | 1 in 282 (0.3543%) |
-| Bonus retrigger | 1 in 8,520 (0.0117%) |
-| Seven Souls completed | 1 in 1,374,078 (0.0001%) |
-| Soul awarded by shards | 1 in 239,422 (0.0004%) |
-| Split Symbol | 1 in 10 (10.2531%) |
-| Infernal Takeover | 1 in 1,332 (0.0751%) |
-| Wild Bomb | 1 in 155 (0.6457%) |
-| 66,666x max win | 1 in 5,250,179 (0.0000%) |
+| Soul Apocalypse | 1 in 25,868,995 (0.0000%) |
+| Golden Wild Bomb | 1 in 2,031 (0.0492%) |
+| Demon Overlord | 1 in 1,164 (0.0859%) |
+| Seal pattern | 1 in 282 (0.3545%) |
+| Bonus retrigger | 1 in 8,540 (0.0117%) |
+| Seven Souls completed | 1 in 25,090,120 (0.0000%) |
+| Soul awarded by shards | 1 in 478,046 (0.0002%) |
+| Split Symbol | 1 in 10 (10.2529%) |
+| Infernal Takeover | 1 in 1,330 (0.0752%) |
+| Wild Bomb | 1 in 155 (0.6454%) |
+| 66,666x max win | 1 in 4,661,071 (0.0000%) |
 
 Deepest cascade sequence in the book set: 11 evaluations (safety stop 60).
 
@@ -167,32 +167,32 @@ Deepest cascade sequence in the book set: 11 evaluations (safety stop 60).
 
 | Payout (x bet) | Share of rounds |
 |---|---|
-| 0 | 61.23430% |
-| 1e-06 to <1 | 27.05643% |
-| 1 to <2 | 5.33080% |
-| 2 to <5 | 4.23902% |
-| 5 to <10 | 1.21928% |
-| 10 to <20 | 0.50726% |
-| 20 to <50 | 0.26392% |
-| 50 to <100 | 0.07872% |
-| 100 to <250 | 0.04158% |
-| 250 to <500 | 0.01551% |
-| 500 to <1000 | 0.00844% |
-| 1000 to <2500 | 0.00290% |
-| 2500 to <5000 | 0.00086% |
-| 5000 to <10000 | 0.00066% |
-| 10000 to <25000 | 0.00026% |
+| 0 | 61.23427% |
+| 1e-06 to <1 | 27.05652% |
+| 1 to <2 | 5.33066% |
+| 2 to <5 | 4.23888% |
+| 5 to <10 | 1.21935% |
+| 10 to <20 | 0.50725% |
+| 20 to <50 | 0.26401% |
+| 50 to <100 | 0.07887% |
+| 100 to <250 | 0.04151% |
+| 250 to <500 | 0.01548% |
+| 500 to <1000 | 0.00853% |
+| 1000 to <2500 | 0.00287% |
+| 2500 to <5000 | 0.00080% |
+| 5000 to <10000 | 0.00068% |
+| 10000 to <25000 | 0.00024% |
 | 25000 to <66666 | 0.00006% |
 | 66,666 (max win) | 0.00002% |
 
 ### Natural play (200,000 rounds, no re-weighting)
 
-RTP 99.26% ± 29.66% (95% CI), hit rate 37.88%, SD 67.7, largest 29,444x, max wins 0.
+RTP 98.96% ± 29.66% (95% CI), hit rate 37.88%, SD 67.7, largest 29,444x, max wins 0.
 
 | Bonus | Natural frequency | Average bonus win |
 |---|---|---|
 | Hellfire Spins | 1 in 362 (552 seen) | 112.9x |
-| Demon's Covenant | 1 in 11,765 (17 seen) | 100.3x |
+| Demon's Covenant | 1 in 11,765 (17 seen) | 64.8x |
 | Abyssal Descent | 1 in 200,000 (1 seen) | 16.6x |
 
 ## hellfire (75x)
@@ -201,43 +201,43 @@ RTP 99.26% ± 29.66% (95% CI), hit rate 37.88%, SD 67.7, largest 29,444x, max wi
 
 | Section | RTP |
 |---|---|
-| Hellfire Spins | 95.6161% |
-| Base game | 0.3839% |
+| Hellfire Spins | 95.6159% |
+| Base game | 0.3841% |
 
 ### RTP contribution by feature (all sections)
 
 | Feature | RTP |
 |---|---|
-| Golden Wild Bombs | 47.4707% |
-| Infernal Takeover | 18.1849% |
-| Wild Bombs | 11.5077% |
-| Nine Hell Seals | 8.4361% |
-| regular wins (first evaluation) | 5.9948% |
-| Hellstars | 1.9565% |
-| cascade wins | 1.4683% |
-| Demon Overlord | 0.4808% |
-| Split Symbols | 0.3503% |
-| Seven Souls milestone wilds | 0.1498% |
+| Golden Wild Bombs | 47.5682% |
+| Infernal Takeover | 18.0685% |
+| Wild Bombs | 11.5574% |
+| Nine Hell Seals | 8.4241% |
+| regular wins (first evaluation) | 5.9909% |
+| Hellstars | 1.9456% |
+| cascade wins | 1.4669% |
+| Demon Overlord | 0.4804% |
+| Split Symbols | 0.3487% |
+| Seven Souls milestone wilds | 0.1493% |
 
 ### Bonuses
 
 | Bonus | Frequency | Average payout | SD | Largest | RTP share |
 |---|---|---|---|---|---|
-| Hellfire Spins | 1 in 1 | 72.0x | 681.3 | 66,666x | 96.0000% |
+| Hellfire Spins | 1 in 1 | 72.0x | 679.9 | 66,666x | 96.0000% |
 
 ### Feature frequency (rounds containing it)
 
 | Feature | Frequency |
 |---|---|
-| Golden Wild Bomb | 1 in 26 (3.7761%) |
-| Demon Overlord | 1 in 27 (3.7033%) |
-| Seal pattern | 1 in 4 (24.2914%) |
-| Bonus retrigger | 1 in 31 (3.1952%) |
-| Soul awarded by shards | 1 in 7,027 (0.0142%) |
-| Split Symbol | 1 in 1 (77.2024%) |
-| Infernal Takeover | 1 in 11 (8.9948%) |
-| Wild Bomb | 1 in 5 (20.2200%) |
-| 66,666x max win | 1 in 39,025 (0.0026%) |
+| Golden Wild Bomb | 1 in 26 (3.7777%) |
+| Demon Overlord | 1 in 27 (3.6986%) |
+| Seal pattern | 1 in 4 (24.2571%) |
+| Bonus retrigger | 1 in 31 (3.1950%) |
+| Soul awarded by shards | 1 in 7,035 (0.0142%) |
+| Split Symbol | 1 in 1 (77.2118%) |
+| Infernal Takeover | 1 in 11 (8.9800%) |
+| Wild Bomb | 1 in 5 (20.2254%) |
+| 66,666x max win | 1 in 39,156 (0.0026%) |
 
 Deepest cascade sequence in the book set: 12 evaluations (safety stop 60).
 
@@ -245,31 +245,31 @@ Deepest cascade sequence in the book set: 12 evaluations (safety stop 60).
 
 | Payout (x bet) | Share of rounds |
 |---|---|
-| 0 | 1.23920% |
-| 1e-06 to <1 | 7.43568% |
-| 1 to <2 | 8.88413% |
-| 2 to <5 | 21.36655% |
-| 5 to <10 | 19.12693% |
-| 10 to <20 | 15.99409% |
-| 20 to <50 | 12.92894% |
-| 50 to <100 | 5.30424% |
-| 100 to <250 | 3.95898% |
-| 250 to <500 | 1.60145% |
-| 500 to <1000 | 0.99725% |
-| 1000 to <2500 | 0.72325% |
-| 2500 to <5000 | 0.24164% |
-| 5000 to <10000 | 0.13644% |
-| 10000 to <25000 | 0.04813% |
-| 25000 to <66666 | 0.01052% |
-| 66,666 (max win) | 0.00256% |
+| 0 | 1.23760% |
+| 1e-06 to <1 | 7.44343% |
+| 1 to <2 | 8.89322% |
+| 2 to <5 | 21.39355% |
+| 5 to <10 | 19.12940% |
+| 10 to <20 | 15.99160% |
+| 20 to <50 | 12.89537% |
+| 50 to <100 | 5.28747% |
+| 100 to <250 | 3.96121% |
+| 250 to <500 | 1.59886% |
+| 500 to <1000 | 0.99736% |
+| 1000 to <2500 | 0.73087% |
+| 2500 to <5000 | 0.24409% |
+| 5000 to <10000 | 0.13499% |
+| 10000 to <25000 | 0.04797% |
+| 25000 to <66666 | 0.01048% |
+| 66,666 (max win) | 0.00255% |
 
-### Natural play (10,000 rounds, no re-weighting)
+### Natural play (20,000 rounds, no re-weighting)
 
-RTP 98.66% ± 21.37% (95% CI), hit rate 98.71%, SD 10.9, largest 66,666x, max wins 1.
+RTP 92.91% ± 12.52% (95% CI), hit rate 98.77%, SD 9.0, largest 66,666x, max wins 1.
 
 | Bonus | Natural frequency | Average bonus win |
 |---|---|---|
-| Hellfire Spins | 1 in 1 (10000 seen) | 73.7x |
+| Hellfire Spins | 1 in 1 (20000 seen) | 69.4x |
 
 ## covenant_blood (250x)
 
@@ -277,46 +277,46 @@ RTP 98.66% ± 21.37% (95% CI), hit rate 98.71%, SD 10.9, largest 66,666x, max wi
 
 | Section | RTP |
 |---|---|
-| Demon's Covenant | 95.9046% |
-| Base game | 0.0954% |
+| Demon's Covenant | 95.9048% |
+| Base game | 0.0952% |
 
 ### RTP contribution by feature (all sections)
 
 | Feature | RTP |
 |---|---|
-| Golden Wild Bombs | 51.7186% |
-| Wild Bombs | 14.2233% |
-| Infernal Takeover | 14.1362% |
-| Nine Hell Seals | 10.9631% |
-| regular wins (first evaluation) | 2.8554% |
-| Hellstars | 0.7944% |
-| cascade wins | 0.7114% |
-| Demon Overlord | 0.3451% |
-| Split Symbols | 0.1677% |
-| Seven Souls milestone wilds | 0.0799% |
-| Soul Apocalypse | 0.0050% |
+| Golden Wild Bombs | 52.0903% |
+| Infernal Takeover | 13.9097% |
+| Wild Bombs | 13.8472% |
+| Nine Hell Seals | 11.1282% |
+| regular wins (first evaluation) | 2.8301% |
+| Hellstars | 0.7691% |
+| cascade wins | 0.6967% |
+| Demon Overlord | 0.3919% |
+| Seven Souls milestone wilds | 0.1619% |
+| Split Symbols | 0.1612% |
+| Soul Apocalypse | 0.0138% |
 
 ### Bonuses
 
 | Bonus | Frequency | Average payout | SD | Largest | RTP share |
 |---|---|---|---|---|---|
-| Demon's Covenant | 1 in 1 | 240.0x | 1,842.3 | 66,666x | 96.0000% |
+| Demon's Covenant | 1 in 1 | 240.0x | 1,882.3 | 66,666x | 96.0000% |
 
 ### Feature frequency (rounds containing it)
 
 | Feature | Frequency |
 |---|---|
-| Soul Apocalypse | 1 in 46,861 (0.0021%) |
-| Golden Wild Bomb | 1 in 21 (4.7142%) |
-| Demon Overlord | 1 in 22 (4.4842%) |
-| Seal pattern | 1 in 3 (32.0637%) |
-| Bonus retrigger | 1 in 25 (4.0057%) |
-| Seven Souls completed | 1 in 46,861 (0.0021%) |
-| Soul awarded by shards | 1 in 7,435 (0.0135%) |
-| Split Symbol | 1 in 1 (82.9532%) |
-| Infernal Takeover | 1 in 7 (13.3951%) |
-| Wild Bomb | 1 in 4 (24.2846%) |
-| 66,666x max win | 1 in 4,707 (0.0212%) |
+| Soul Apocalypse | 1 in 19,218 (0.0052%) |
+| Golden Wild Bomb | 1 in 21 (4.6534%) |
+| Demon Overlord | 1 in 22 (4.5509%) |
+| Seal pattern | 1 in 3 (31.7865%) |
+| Bonus retrigger | 1 in 25 (4.0080%) |
+| Seven Souls completed | 1 in 19,218 (0.0052%) |
+| Soul awarded by shards | 1 in 1,643 (0.0609%) |
+| Split Symbol | 1 in 1 (82.9593%) |
+| Infernal Takeover | 1 in 7 (13.3942%) |
+| Wild Bomb | 1 in 4 (24.1831%) |
+| 66,666x max win | 1 in 4,394 (0.0228%) |
 
 Deepest cascade sequence in the book set: 14 evaluations (safety stop 60).
 
@@ -324,31 +324,31 @@ Deepest cascade sequence in the book set: 14 evaluations (safety stop 60).
 
 | Payout (x bet) | Share of rounds |
 |---|---|
-| 0 | 0.56698% |
-| 1e-06 to <1 | 3.80419% |
-| 1 to <2 | 5.03172% |
-| 2 to <5 | 14.12737% |
-| 5 to <10 | 14.86392% |
-| 10 to <20 | 15.48430% |
-| 20 to <50 | 17.54920% |
-| 50 to <100 | 9.92515% |
-| 100 to <250 | 8.98497% |
-| 250 to <500 | 3.99572% |
-| 500 to <1000 | 2.35015% |
-| 1000 to <2500 | 1.72642% |
-| 2500 to <5000 | 0.72868% |
-| 5000 to <10000 | 0.44086% |
-| 10000 to <25000 | 0.30384% |
-| 25000 to <66666 | 0.09526% |
-| 66,666 (max win) | 0.02124% |
+| 0 | 0.57045% |
+| 1e-06 to <1 | 3.82517% |
+| 1 to <2 | 5.09770% |
+| 2 to <5 | 14.13350% |
+| 5 to <10 | 15.11660% |
+| 10 to <20 | 15.24660% |
+| 20 to <50 | 17.58477% |
+| 50 to <100 | 9.89834% |
+| 100 to <250 | 9.01183% |
+| 250 to <500 | 3.93360% |
+| 500 to <1000 | 2.31400% |
+| 1000 to <2500 | 1.71953% |
+| 2500 to <5000 | 0.70008% |
+| 5000 to <10000 | 0.42501% |
+| 10000 to <25000 | 0.30244% |
+| 25000 to <66666 | 0.09762% |
+| 66,666 (max win) | 0.02276% |
 
-### Natural play (10,000 rounds, no re-weighting)
+### Natural play (20,000 rounds, no re-weighting)
 
-RTP 96.58% ± 14.19% (95% CI), hit rate 99.33%, SD 7.2, largest 66,666x, max wins 1.
+RTP 90.43% ± 9.91% (95% CI), hit rate 99.35%, SD 7.2, largest 66,666x, max wins 4.
 
 | Bonus | Natural frequency | Average bonus win |
 |---|---|---|
-| Demon's Covenant | 1 in 1 (10000 seen) | 241.2x |
+| Demon's Covenant | 1 in 1 (20000 seen) | 225.8x |
 
 ## covenant_soul (250x)
 
@@ -356,46 +356,46 @@ RTP 96.58% ± 14.19% (95% CI), hit rate 99.33%, SD 7.2, largest 66,666x, max win
 
 | Section | RTP |
 |---|---|
-| Demon's Covenant | 95.9069% |
-| Base game | 0.0931% |
+| Demon's Covenant | 95.9059% |
+| Base game | 0.0941% |
 
 ### RTP contribution by feature (all sections)
 
 | Feature | RTP |
 |---|---|
-| Infernal Takeover | 60.6446% |
-| Golden Wild Bombs | 18.0636% |
-| Nine Hell Seals | 7.7601% |
-| Wild Bombs | 5.3194% |
-| regular wins (first evaluation) | 1.8935% |
-| Hellstars | 0.6765% |
-| cascade wins | 0.6687% |
-| Seven Souls milestone wilds | 0.4410% |
-| Demon Overlord | 0.3251% |
-| Split Symbols | 0.1152% |
-| Soul Apocalypse | 0.0924% |
+| Infernal Takeover | 59.7745% |
+| Golden Wild Bombs | 18.2730% |
+| Nine Hell Seals | 7.9505% |
+| Wild Bombs | 5.7487% |
+| regular wins (first evaluation) | 1.9490% |
+| Hellstars | 0.7143% |
+| cascade wins | 0.6976% |
+| Demon Overlord | 0.3165% |
+| Seven Souls milestone wilds | 0.3008% |
+| Soul Apocalypse | 0.1535% |
+| Split Symbols | 0.1215% |
 
 ### Bonuses
 
 | Bonus | Frequency | Average payout | SD | Largest | RTP share |
 |---|---|---|---|---|---|
-| Demon's Covenant | 1 in 1 | 240.0x | 1,913.8 | 66,666x | 96.0000% |
+| Demon's Covenant | 1 in 1 | 240.0x | 1,864.8 | 66,666x | 96.0000% |
 
 ### Feature frequency (rounds containing it)
 
 | Feature | Frequency |
 |---|---|
-| Soul Apocalypse | 1 in 2,387 (0.0419%) |
-| Golden Wild Bomb | 1 in 23 (4.2707%) |
-| Demon Overlord | 1 in 21 (4.6759%) |
-| Seal pattern | 1 in 1 (81.3291%) |
-| Bonus retrigger | 1 in 23 (4.3837%) |
-| Seven Souls completed | 1 in 2,344 (0.0427%) |
-| Soul awarded by shards | 1 in 172 (0.5824%) |
-| Split Symbol | 1 in 1 (83.7412%) |
-| Infernal Takeover | 1 in 2 (53.0474%) |
-| Wild Bomb | 1 in 4 (24.0318%) |
-| 66,666x max win | 1 in 3,203 (0.0312%) |
+| Soul Apocalypse | 1 in 6,533 (0.0153%) |
+| Golden Wild Bomb | 1 in 23 (4.4342%) |
+| Demon Overlord | 1 in 21 (4.6778%) |
+| Seal pattern | 1 in 1 (82.1198%) |
+| Bonus retrigger | 1 in 23 (4.4098%) |
+| Seven Souls completed | 1 in 6,533 (0.0153%) |
+| Soul awarded by shards | 1 in 370 (0.2703%) |
+| Split Symbol | 1 in 1 (83.9027%) |
+| Infernal Takeover | 1 in 2 (53.9091%) |
+| Wild Bomb | 1 in 4 (24.5034%) |
+| 66,666x max win | 1 in 3,441 (0.0291%) |
 
 Deepest cascade sequence in the book set: 14 evaluations (safety stop 60).
 
@@ -403,79 +403,79 @@ Deepest cascade sequence in the book set: 14 evaluations (safety stop 60).
 
 | Payout (x bet) | Share of rounds |
 |---|---|
-| 0 | 0.65173% |
-| 1e-06 to <1 | 4.08405% |
-| 1 to <2 | 4.76823% |
-| 2 to <5 | 11.89155% |
-| 5 to <10 | 14.62056% |
-| 10 to <20 | 15.19523% |
-| 20 to <50 | 17.29398% |
-| 50 to <100 | 10.53989% |
-| 100 to <250 | 9.87338% |
-| 250 to <500 | 4.79825% |
-| 500 to <1000 | 2.86505% |
-| 1000 to <2500 | 1.95734% |
-| 2500 to <5000 | 0.74914% |
-| 5000 to <10000 | 0.37223% |
-| 10000 to <25000 | 0.22536% |
-| 25000 to <66666 | 0.08281% |
-| 66,666 (max win) | 0.03122% |
+| 0 | 0.59098% |
+| 1e-06 to <1 | 3.83718% |
+| 1 to <2 | 4.63057% |
+| 2 to <5 | 11.44419% |
+| 5 to <10 | 14.38333% |
+| 10 to <20 | 15.25180% |
+| 20 to <50 | 17.32907% |
+| 50 to <100 | 10.67884% |
+| 100 to <250 | 10.32498% |
+| 250 to <500 | 4.93895% |
+| 500 to <1000 | 2.99446% |
+| 1000 to <2500 | 2.11314% |
+| 2500 to <5000 | 0.78708% |
+| 5000 to <10000 | 0.38908% |
+| 10000 to <25000 | 0.19866% |
+| 25000 to <66666 | 0.07863% |
+| 66,666 (max win) | 0.02906% |
 
-### Natural play (10,000 rounds, no re-weighting)
+### Natural play (20,000 rounds, no re-weighting)
 
-RTP 105.62% ± 16.22% (95% CI), hit rate 99.44%, SD 8.3, largest 66,666x, max wins 4.
+RTP 109.24% ± 11.85% (95% CI), hit rate 99.44%, SD 8.5, largest 66,666x, max wins 9.
 
 | Bonus | Natural frequency | Average bonus win |
 |---|---|---|
-| Demon's Covenant | 1 in 1 (10000 seen) | 263.8x |
+| Demon's Covenant | 1 in 1 (20000 seen) | 272.9x |
 
-## abyssal (350x)
+## abyssal (275x)
 
 ### RTP contribution by game section
 
 | Section | RTP |
 |---|---|
-| Abyssal Descent | 95.9474% |
-| Base game | 0.0526% |
+| Abyssal Descent | 95.9340% |
+| Base game | 0.0660% |
 
 ### RTP contribution by feature (all sections)
 
 | Feature | RTP |
 |---|---|
-| Golden Wild Bombs | 47.4288% |
-| Wild Bombs | 12.1606% |
-| Infernal Takeover | 10.3738% |
-| Nine Hell Seals | 9.6105% |
-| Abyssal Descent multiplier | 7.9785% |
-| Hellstars | 3.7849% |
-| Seven Souls milestone wilds | 2.6251% |
-| Demon Overlord | 0.9188% |
-| regular wins (first evaluation) | 0.5876% |
-| Split Symbols | 0.4708% |
-| Soul Apocalypse | 0.0560% |
-| cascade wins | 0.0047% |
+| Golden Wild Bombs | 44.3995% |
+| Wild Bombs | 12.6719% |
+| Nine Hell Seals | 10.6121% |
+| Infernal Takeover | 9.7091% |
+| Abyssal Descent multiplier | 9.3662% |
+| Hellstars | 4.0310% |
+| Seven Souls milestone wilds | 2.8871% |
+| Demon Overlord | 0.9927% |
+| regular wins (first evaluation) | 0.7310% |
+| Split Symbols | 0.5438% |
+| Soul Apocalypse | 0.0497% |
+| cascade wins | 0.0059% |
 
 ### Bonuses
 
 | Bonus | Frequency | Average payout | SD | Largest | RTP share |
 |---|---|---|---|---|---|
-| Abyssal Descent | 1 in 1 | 336.0x | 1,997.1 | 66,666x | 96.0000% |
+| Abyssal Descent | 1 in 1 | 264.0x | 1,665.5 | 66,666x | 96.0000% |
 
 ### Feature frequency (rounds containing it)
 
 | Feature | Frequency |
 |---|---|
-| Soul Apocalypse | 1 in 6,549 (0.0153%) |
-| Golden Wild Bomb | 1 in 19 (5.3383%) |
-| Demon Overlord | 1 in 21 (4.7222%) |
-| Seal pattern | 1 in 9 (11.4472%) |
-| Bonus retrigger | 1 in 19 (5.3994%) |
-| Seven Souls completed | 1 in 6,549 (0.0153%) |
-| Soul awarded by shards | 1 in 220 (0.4552%) |
-| Split Symbol | 1 in 1 (83.7484%) |
-| Infernal Takeover | 1 in 21 (4.7871%) |
-| Wild Bomb | 1 in 4 (25.2582%) |
-| 66,666x max win | 1 in 4,161 (0.0240%) |
+| Soul Apocalypse | 1 in 7,824 (0.0128%) |
+| Golden Wild Bomb | 1 in 22 (4.4947%) |
+| Demon Overlord | 1 in 22 (4.5710%) |
+| Seal pattern | 1 in 10 (10.3606%) |
+| Bonus retrigger | 1 in 19 (5.1444%) |
+| Seven Souls completed | 1 in 7,824 (0.0128%) |
+| Soul awarded by shards | 1 in 246 (0.4069%) |
+| Split Symbol | 1 in 1 (83.5702%) |
+| Infernal Takeover | 1 in 22 (4.4590%) |
+| Wild Bomb | 1 in 4 (24.1606%) |
+| 66,666x max win | 1 in 6,238 (0.0160%) |
 
 Deepest cascade sequence in the book set: 12 evaluations (safety stop 60).
 
@@ -483,78 +483,78 @@ Deepest cascade sequence in the book set: 12 evaluations (safety stop 60).
 
 | Payout (x bet) | Share of rounds |
 |---|---|
-| 0 | 0.85987% |
-| 1e-06 to <1 | 2.52054% |
-| 1 to <2 | 2.36839% |
-| 2 to <5 | 6.54748% |
-| 5 to <10 | 8.82638% |
-| 10 to <20 | 13.03832% |
-| 20 to <50 | 20.83389% |
-| 50 to <100 | 15.07013% |
-| 100 to <250 | 14.26067% |
-| 250 to <500 | 6.54608% |
-| 500 to <1000 | 3.89547% |
-| 1000 to <2500 | 2.96246% |
-| 2500 to <5000 | 1.12094% |
-| 5000 to <10000 | 0.62066% |
-| 10000 to <25000 | 0.40275% |
-| 25000 to <66666 | 0.10193% |
-| 66,666 (max win) | 0.02403% |
+| 0 | 1.06001% |
+| 1e-06 to <1 | 3.04653% |
+| 1 to <2 | 2.78369% |
+| 2 to <5 | 7.44236% |
+| 5 to <10 | 9.67762% |
+| 10 to <20 | 13.80665% |
+| 20 to <50 | 21.11333% |
+| 50 to <100 | 14.60975% |
+| 100 to <250 | 13.21943% |
+| 250 to <500 | 5.79870% |
+| 500 to <1000 | 3.32532% |
+| 1000 to <2500 | 2.40963% |
+| 2500 to <5000 | 0.87100% |
+| 5000 to <10000 | 0.46338% |
+| 10000 to <25000 | 0.28729% |
+| 25000 to <66666 | 0.06928% |
+| 66,666 (max win) | 0.01603% |
 
-### Natural play (10,000 rounds, no re-weighting)
+### Natural play (20,000 rounds, no re-weighting)
 
-RTP 75.59% ± 9.44% (95% CI), hit rate 98.89%, SD 4.8, largest 66,666x, max wins 1.
+RTP 95.28% ± 8.26% (95% CI), hit rate 98.94%, SD 6.0, largest 66,666x, max wins 3.
 
 | Bonus | Natural frequency | Average bonus win |
 |---|---|---|
-| Abyssal Descent | 1 in 1 (10000 seen) | 264.4x |
+| Abyssal Descent | 1 in 1 (20000 seen) | 261.8x |
 
-## furnace_blood (550x)
+## furnace_blood (500x)
 
 ### RTP contribution by game section
 
 | Section | RTP |
 |---|---|
-| The Soul Furnace | 95.9736% |
-| Base game | 0.0264% |
+| The Soul Furnace | 95.9711% |
+| Base game | 0.0289% |
 
 ### RTP contribution by feature (all sections)
 
 | Feature | RTP |
 |---|---|
-| Golden Wild Bombs | 35.2410% |
-| Infernal Takeover | 27.3990% |
-| Wild Bombs | 15.4518% |
-| Nine Hell Seals | 12.9526% |
-| Seven Souls milestone wilds | 1.8377% |
-| regular wins (first evaluation) | 1.1320% |
-| Soul Apocalypse | 0.7312% |
-| cascade wins | 0.4257% |
-| Hellstars | 0.4104% |
-| Demon Overlord | 0.3385% |
-| Split Symbols | 0.0801% |
+| Golden Wild Bombs | 32.9020% |
+| Infernal Takeover | 27.2228% |
+| Wild Bombs | 15.6826% |
+| Nine Hell Seals | 13.4460% |
+| Seven Souls milestone wilds | 2.4502% |
+| Soul Apocalypse | 1.8202% |
+| regular wins (first evaluation) | 1.1393% |
+| cascade wins | 0.4569% |
+| Hellstars | 0.4337% |
+| Demon Overlord | 0.3631% |
+| Split Symbols | 0.0831% |
 
 ### Bonuses
 
 | Bonus | Frequency | Average payout | SD | Largest | RTP share |
 |---|---|---|---|---|---|
-| The Soul Furnace | 1 in 1 | 528.0x | 2,085.5 | 66,666x | 96.0000% |
+| The Soul Furnace | 1 in 1 | 480.0x | 1,950.7 | 66,666x | 96.0000% |
 
 ### Feature frequency (rounds containing it)
 
 | Feature | Frequency |
 |---|---|
-| Soul Apocalypse | 1 in 663 (0.1508%) |
-| Golden Wild Bomb | 1 in 13 (7.4377%) |
-| Demon Overlord | 1 in 19 (5.1292%) |
-| Seal pattern | 1 in 1 (74.9327%) |
-| Bonus retrigger | 1 in 18 (5.4102%) |
-| Seven Souls completed | 1 in 663 (0.1508%) |
-| Soul awarded by shards | 1 in 61 (1.6425%) |
-| Split Symbol | 1 in 1 (84.6909%) |
-| Infernal Takeover | 1 in 2 (41.2620%) |
-| Wild Bomb | 1 in 3 (29.3412%) |
-| 66,666x max win | 1 in 3,710 (0.0270%) |
+| Soul Apocalypse | 1 in 211 (0.4731%) |
+| Golden Wild Bomb | 1 in 15 (6.5448%) |
+| Demon Overlord | 1 in 20 (5.0395%) |
+| Seal pattern | 1 in 1 (73.9033%) |
+| Bonus retrigger | 1 in 18 (5.4272%) |
+| Seven Souls completed | 1 in 211 (0.4732%) |
+| Soul awarded by shards | 1 in 25 (3.9435%) |
+| Split Symbol | 1 in 1 (84.6928%) |
+| Infernal Takeover | 1 in 2 (40.1552%) |
+| Wild Bomb | 1 in 3 (28.6789%) |
+| 66,666x max win | 1 in 4,686 (0.0213%) |
 
 Deepest cascade sequence in the book set: 11 evaluations (safety stop 60).
 
@@ -562,110 +562,110 @@ Deepest cascade sequence in the book set: 11 evaluations (safety stop 60).
 
 | Payout (x bet) | Share of rounds |
 |---|---|
-| 0 | 0.25400% |
-| 1e-06 to <1 | 1.48787% |
-| 1 to <2 | 2.02891% |
-| 2 to <5 | 5.99720% |
-| 5 to <10 | 7.77737% |
-| 10 to <20 | 10.07748% |
-| 20 to <50 | 16.02502% |
-| 50 to <100 | 12.97199% |
-| 100 to <250 | 16.12373% |
-| 250 to <500 | 9.40833% |
-| 500 to <1000 | 7.02137% |
-| 1000 to <2500 | 5.97953% |
-| 2500 to <5000 | 2.65056% |
-| 5000 to <10000 | 1.90343% |
-| 10000 to <25000 | 0.17782% |
-| 25000 to <66666 | 0.08842% |
-| 66,666 (max win) | 0.02695% |
+| 0 | 0.30911% |
+| 1e-06 to <1 | 1.68727% |
+| 1 to <2 | 2.17081% |
+| 2 to <5 | 6.30775% |
+| 5 to <10 | 8.20416% |
+| 10 to <20 | 10.36747% |
+| 20 to <50 | 16.37230% |
+| 50 to <100 | 12.96569% |
+| 100 to <250 | 15.84716% |
+| 250 to <500 | 9.20507% |
+| 500 to <1000 | 6.65590% |
+| 1000 to <2500 | 5.65632% |
+| 2500 to <5000 | 2.37472% |
+| 5000 to <10000 | 1.61957% |
+| 10000 to <25000 | 0.15618% |
+| 25000 to <66666 | 0.07919% |
+| 66,666 (max win) | 0.02134% |
 
-### Natural play (10,000 rounds, no re-weighting)
+### Natural play (20,000 rounds, no re-weighting)
 
-RTP 77.86% ± 9.75% (95% CI), hit rate 99.40%, SD 5.0, largest 66,666x, max wins 4.
+RTP 88.40% ± 7.71% (95% CI), hit rate 99.36%, SD 5.6, largest 66,666x, max wins 12.
 
 | Bonus | Natural frequency | Average bonus win |
 |---|---|---|
-| The Soul Furnace | 1 in 1 (10000 seen) | 428.1x |
+| The Soul Furnace | 1 in 1 (20000 seen) | 441.8x |
 
-## furnace_soul (550x)
+## furnace_soul (500x)
 
 ### RTP contribution by game section
 
 | Section | RTP |
 |---|---|
-| The Soul Furnace | 95.9738% |
-| Base game | 0.0262% |
+| The Soul Furnace | 95.9713% |
+| Base game | 0.0287% |
 
 ### RTP contribution by feature (all sections)
 
 | Feature | RTP |
 |---|---|
-| Infernal Takeover | 59.2752% |
-| Golden Wild Bombs | 13.9366% |
-| Nine Hell Seals | 7.9911% |
-| Wild Bombs | 6.6487% |
-| Soul Apocalypse | 3.6299% |
-| Seven Souls milestone wilds | 2.8318% |
-| regular wins (first evaluation) | 0.6461% |
-| Hellstars | 0.3356% |
-| cascade wins | 0.3324% |
-| Demon Overlord | 0.3236% |
-| Split Symbols | 0.0490% |
+| Infernal Takeover | 60.7089% |
+| Golden Wild Bombs | 14.7780% |
+| Nine Hell Seals | 7.8400% |
+| Wild Bombs | 6.3031% |
+| Seven Souls milestone wilds | 2.4651% |
+| Soul Apocalypse | 2.1006% |
+| regular wins (first evaluation) | 0.7349% |
+| Hellstars | 0.3570% |
+| cascade wins | 0.3472% |
+| Demon Overlord | 0.3113% |
+| Split Symbols | 0.0539% |
 
 ### Bonuses
 
 | Bonus | Frequency | Average payout | SD | Largest | RTP share |
 |---|---|---|---|---|---|
-| The Soul Furnace | 1 in 1 | 528.0x | 1,932.5 | 66,666x | 96.0000% |
+| The Soul Furnace | 1 in 1 | 480.0x | 1,955.9 | 66,666x | 96.0000% |
 
 ### Feature frequency (rounds containing it)
 
 | Feature | Frequency |
 |---|---|
-| Soul Apocalypse | 1 in 33 (2.9876%) |
-| Golden Wild Bomb | 1 in 17 (5.8574%) |
-| Demon Overlord | 1 in 19 (5.1488%) |
-| Seal pattern | 1 in 1 (94.6727%) |
-| Bonus retrigger | 1 in 16 (6.2002%) |
-| Seven Souls completed | 1 in 33 (2.9879%) |
-| Soul awarded by shards | 1 in 7 (13.4447%) |
-| Split Symbol | 1 in 1 (85.9179%) |
-| Infernal Takeover | 1 in 1 (82.8528%) |
-| Wild Bomb | 1 in 4 (28.4327%) |
-| 66,666x max win | 1 in 3,813 (0.0262%) |
+| Soul Apocalypse | 1 in 71 (1.4087%) |
+| Golden Wild Bomb | 1 in 18 (5.5725%) |
+| Demon Overlord | 1 in 20 (5.0005%) |
+| Seal pattern | 1 in 1 (94.0754%) |
+| Bonus retrigger | 1 in 17 (5.9251%) |
+| Seven Souls completed | 1 in 71 (1.4088%) |
+| Soul awarded by shards | 1 in 12 (8.3075%) |
+| Split Symbol | 1 in 1 (85.6781%) |
+| Infernal Takeover | 1 in 1 (81.3105%) |
+| Wild Bomb | 1 in 4 (27.9557%) |
+| 66,666x max win | 1 in 3,741 (0.0267%) |
 
-Deepest cascade sequence in the book set: 12 evaluations (safety stop 60).
+Deepest cascade sequence in the book set: 11 evaluations (safety stop 60).
 
 ### Payout distribution
 
 | Payout (x bet) | Share of rounds |
 |---|---|
-| 0 | 0.34354% |
-| 1e-06 to <1 | 1.58772% |
-| 1 to <2 | 1.70961% |
-| 2 to <5 | 4.63840% |
-| 5 to <10 | 6.79253% |
-| 10 to <20 | 8.86187% |
-| 20 to <50 | 14.83159% |
-| 50 to <100 | 13.17440% |
-| 100 to <250 | 17.24026% |
-| 250 to <500 | 11.00678% |
-| 500 to <1000 | 8.21272% |
-| 1000 to <2500 | 6.79923% |
-| 2500 to <5000 | 2.95490% |
-| 5000 to <10000 | 1.62040% |
-| 10000 to <25000 | 0.13470% |
-| 25000 to <66666 | 0.06511% |
-| 66,666 (max win) | 0.02623% |
+| 0 | 0.36068% |
+| 1e-06 to <1 | 1.82565% |
+| 1 to <2 | 1.89512% |
+| 2 to <5 | 5.32481% |
+| 5 to <10 | 7.62394% |
+| 10 to <20 | 9.58409% |
+| 20 to <50 | 15.53692% |
+| 50 to <100 | 13.36555% |
+| 100 to <250 | 16.86715% |
+| 250 to <500 | 10.16098% |
+| 500 to <1000 | 7.41178% |
+| 1000 to <2500 | 5.96453% |
+| 2500 to <5000 | 2.41795% |
+| 5000 to <10000 | 1.38998% |
+| 10000 to <25000 | 0.16780% |
+| 25000 to <66666 | 0.07635% |
+| 66,666 (max win) | 0.02673% |
 
-### Natural play (10,000 rounds, no re-weighting)
+### Natural play (20,000 rounds, no re-weighting)
 
-RTP 106.72% ± 11.64% (95% CI), hit rate 99.40%, SD 5.9, largest 66,666x, max wins 6.
+RTP 99.81% ± 7.72% (95% CI), hit rate 99.46%, SD 5.6, largest 66,666x, max wins 11.
 
 | Bonus | Natural frequency | Average bonus win |
 |---|---|---|
-| The Soul Furnace | 1 in 1 (10000 seen) | 586.8x |
+| The Soul Furnace | 1 in 1 (20000 seen) | 498.9x |
 
 ## Maximum-win verification
 
