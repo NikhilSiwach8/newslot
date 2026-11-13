@@ -57,4 +57,8 @@ cd web-sdk/apps/infernal_kingdom && PUBLIC_CHROMATIC=true npx storybook dev -p 6
 - The Demon's Bargain pact is chosen before the bet (it selects the bet mode), because a
   Stake Engine round is fully decided when the bet is placed.
 - Not yet run inside Stake Engine itself: tested with Storybook against real books and the
-  SDK's format checks.
+  SDK's format checks (all eight modes pass, 6 of 6 Studio risk checks).
+- Every mode publishes at exactly 96.00%, but the raw mechanics differ by pact: natural
+  play measures Furnace Blood ~78% vs Soul ~107% and Abyssal ~76% of its price (see
+  `math/infernal_kingdom/reports/MATH_REPORT.md`). The published weights close the gap; tuning
+  the mechanics closer before submission would reduce that re-weighting.

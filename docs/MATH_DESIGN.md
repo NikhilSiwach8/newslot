@@ -186,10 +186,22 @@ its payout comes from the board like any other.
 | furnace_blood / furnace_soul | 550x | The Soul Furnace with that pact |
 
 Target RTP 96.00% for every mode (`GameConfig.rtp`). Buy prices were set from measured
-natural bonus averages so the optimizer's re-weighting stays small. The optimizer
-(`game_optimization.py`) sets the frequency targets: Hellfire 1 in 370, Covenant 1 in 3,500,
+natural bonus averages so the re-weighting stays small. `game_optimization.py` sets the
+frequency targets: Hellfire 1 in 370, Covenant 1 in 3,500,
 Abyssal 1 in 14,000, Furnace 1 in 60,000, max win about 1 in 8.3 million base bets (Stake
 asks for better than 1 in 10 million).
+
+### Lookup-table weights
+
+`tools/weights.py` (called by `run.py`) writes the published weights instead of the SDK
+optimizer, which met the RTP but left 0.6% of winning base spins at 1x-5x against ~25% in
+natural play. Each criteria group gets exactly the probability its targets imply; inside a
+group a book's weight is `(1 + payout) ** theta`, with theta solved so the group's mean
+matches its RTP share (theta = 0 is natural play; measured |theta| <= 0.13). If a mode
+fails a Stake Studio risk check, books (outside the max-win group) paying 10,000x or more
+are down-weighted by the gentlest factor that passes all six checks, and theta re-balances
+the mean: base 0.6, base_soul 0.8, Furnace buys 0.12, all other buys 1.0. Every book keeps
+a non-zero weight. `IK_OPTIMIZER=sdk` restores the SDK optimizer.
 
 ## 9. RTP attribution
 
@@ -221,6 +233,10 @@ once, to the highest-priority one.
    stayed for the whole spin, so sticky x10 wilds kept completing wins after every refill.
    Hellstars now survive two winning cascades; the deepest sequence measured afterwards was
    10 evaluations. Bonus values fell, so buy prices moved to 75x / 250x / 350x / 550x.
-7. The optimizer had been asked for a base-game RTP of 0.54 against a natural ~0.67 and
-   met it by removing most 1x-5x wins (a gap Stake rejects). Base-game targets now sit
-   close to the natural split (see `game_optimization.py`).
+7. The SDK optimizer met every RTP but removed most 1x-5x base wins (a gap Stake's review
+   flags), even after the base targets were moved close to the natural split. It was
+   replaced by deterministic power-tilt weights (section 8), which keep the natural shape:
+   1x-2x and 2x-5x wins are now 5.3% and 4.2% of base rounds.
+8. With natural tails restored, the Furnace buys and the base SD broke Stake Studio's risk
+   limits (which lower the allowed maximum bet). A tail down-weight for 10,000x+ books,
+   chosen per mode as the gentlest that passes, brings all six risk checks back to pass.

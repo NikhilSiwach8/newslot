@@ -61,7 +61,18 @@ if __name__ == "__main__":
     generate_configs(gamestate)
 
     if run_conditions["run_optimization"]:
-        OptimizationExecution().run_all_modes(config, target_modes, rust_threads)
+        # Default: deterministic power-tilt weights (tools/weights.py), which keep the natural
+        # shape of wins. IK_OPTIMIZER=sdk uses the SDK's optimizer instead; it hit the RTP but
+        # removed most 1x-5x base wins.
+        if os.environ.get("IK_OPTIMIZER") == "sdk":
+            OptimizationExecution().run_all_modes(config, target_modes, rust_threads)
+        else:
+            import sys
+            sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools"))
+            from weights import weigh_mode_safely
+            for mode in target_modes:
+                rtp, _, factor, failures, _ = weigh_mode_safely(config, mode)
+                print(f"weights: {mode} RTP {rtp:.6%} tail factor {factor} risk failures {sorted(failures) or 'none'}")
         generate_configs(gamestate)
 
     if run_conditions["run_analysis"]:
